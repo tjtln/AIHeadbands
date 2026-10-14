@@ -9,8 +9,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icons/favicon-32.png', 'icons/apple-touch-icon.png'],
       manifest: {
-        name: 'AI Headbands',
-        short_name: 'Headbands',
+        name: 'TJs Headbands',
+        short_name: 'TJs Headbands',
         description: 'Pick a topic and guess the word on your forehead before time runs out.',
         theme_color: '#0f172a',
         background_color: '#0f172a',

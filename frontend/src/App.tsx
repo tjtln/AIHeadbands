@@ -225,7 +225,7 @@ function App() {
     return (
       <div className="app-shell setup-shell">
         <div className="setup-card menu-card">
-          <h1>AI Headbands</h1>
+          <h1>TJs Headbands</h1>
 
           {error ? <div className="banner error">{error}</div> : null}
 

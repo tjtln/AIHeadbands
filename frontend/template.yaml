@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 
-Description: Static hosting for the AI Headbands frontend
+Description: Static hosting for the TJs Headbands frontend
 
 Resources:
   FrontendBucket:
