@@ -1,0 +1,15 @@
+name: Deploy
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}
+
+jobs:
+  frontend:
+    uses: ./.github/workflows/deploy-frontend.yml
+    secrets: inherit

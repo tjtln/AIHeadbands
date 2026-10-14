@@ -1,0 +1,80 @@
+name: Deploy Frontend
+
+on:
+  workflow_call: {}
+
+env:
+  AWS_REGION: us-east-1
+  FRONTEND_STACK_NAME: ai-headbands-frontend
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install workspace dependencies
+        run: npm install
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Ensure AWS SAM is installed
+        run: pip install aws-sam-cli
+
+      - name: Build frontend SAM application
+        working-directory: frontend
+        run: sam build --template-file template.yaml
+
+      - name: Deploy frontend SAM application
+        working-directory: frontend
+        run: |
+          sam deploy \
+            --config-file samconfig.toml \
+            --stack-name "$FRONTEND_STACK_NAME" \
+            --region "$AWS_REGION" \
+            --no-confirm-changeset \
+            --no-fail-on-empty-changeset \
+            --resolve-s3
+
+      - name: Read frontend stack outputs
+        id: frontend-outputs
+        run: |
+          BUCKET_NAME=$(aws cloudformation describe-stacks \
+            --stack-name "$FRONTEND_STACK_NAME" \
+            --region "$AWS_REGION" \
+            --query "Stacks[0].Outputs[?OutputKey=='BucketName'].OutputValue" \
+            --output text)
+
+          DISTRIBUTION_ID=$(aws cloudformation describe-stacks \
+            --stack-name "$FRONTEND_STACK_NAME" \
+            --region "$AWS_REGION" \
+            --query "Stacks[0].Outputs[?OutputKey=='DistributionId'].OutputValue" \
+            --output text)
+
+          echo "bucket_name=$BUCKET_NAME" >> "$GITHUB_OUTPUT"
+          echo "distribution_id=$DISTRIBUTION_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Build frontend
+        run: npm run build:frontend
+
+      - name: Sync frontend to S3
+        run: |
+          aws s3 sync frontend/dist "s3://${{ steps.frontend-outputs.outputs.bucket_name }}" --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${{ steps.frontend-outputs.outputs.distribution_id }}" \
+            --paths "/*"

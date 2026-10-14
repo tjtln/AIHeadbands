@@ -1,0 +1,19 @@
+{
+  "name": "ai-headbands",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "shared",
+    "frontend"
+  ],
+  "scripts": {
+    "bootstrap": "npm install",
+    "build": "npm run build --workspaces",
+    "build:frontend": "npm --workspace frontend run build",
+    "build:shared": "npm --workspace shared run build",
+    "dev:frontend": "npm --workspace frontend run dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
