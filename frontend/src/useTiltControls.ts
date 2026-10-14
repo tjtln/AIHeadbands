@@ -73,7 +73,11 @@ export function useTiltControls(
 ): TiltStatus {
   const [status, setStatus] = useState<TiltStatus>('calibrating');
   const baselineRef = useRef<number | null>(null);
-  const armedRef = useRef(true);
+  // Tracks which direction last fired so each direction only fires once per
+  // "trip" past its threshold, without requiring a return to dead-center in
+  // between — a strict return-to-neutral gate can get skipped over entirely
+  // by a fast tilt that jumps straight from one threshold to the other.
+  const lastFiredRef = useRef<'correct' | 'skip' | null>(null);
   const onCorrectRef = useRef(onCorrect);
   const onSkipRef = useRef(onSkip);
   const invertedRef = useRef(inverted);
@@ -85,14 +89,14 @@ export function useTiltControls(
   useEffect(() => {
     if (!active) {
       baselineRef.current = null;
-      armedRef.current = true;
+      lastFiredRef.current = null;
       setStatus('calibrating');
       return;
     }
 
     function recalibrate() {
       baselineRef.current = null;
-      armedRef.current = true;
+      lastFiredRef.current = null;
       setStatus('calibrating');
     }
 
@@ -106,6 +110,7 @@ export function useTiltControls(
 
       if (baselineRef.current === null) {
         baselineRef.current = tilt;
+        lastFiredRef.current = null;
         setStatus('ready');
         return;
       }
@@ -113,16 +118,18 @@ export function useTiltControls(
       const rawDiff = tilt - baselineRef.current;
       const diff = invertedRef.current ? -rawDiff : rawDiff;
 
-      if (armedRef.current) {
-        if (diff > DOWN_THRESHOLD) {
-          armedRef.current = false;
+      if (diff > DOWN_THRESHOLD) {
+        if (lastFiredRef.current !== 'correct') {
+          lastFiredRef.current = 'correct';
           onCorrectRef.current();
-        } else if (diff < -UP_THRESHOLD) {
-          armedRef.current = false;
+        }
+      } else if (diff < -UP_THRESHOLD) {
+        if (lastFiredRef.current !== 'skip') {
+          lastFiredRef.current = 'skip';
           onSkipRef.current();
         }
       } else if (Math.abs(diff) < NEUTRAL_THRESHOLD) {
-        armedRef.current = true;
+        lastFiredRef.current = null;
       }
     }
 
