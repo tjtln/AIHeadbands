@@ -4,6 +4,7 @@ import { isTiltSupported, requestTiltPermission, useTiltControls } from './useTi
 
 const DEFAULT_DURATION = 180;
 const CLICK_DELAY_MS = 220;
+const FEEDBACK_DELAY_MS = 280;
 const CATEGORY_MAP: Record<string, Record<string, string[]>> = topicsData;
 const CATEGORY_NAMES = Object.keys(CATEGORY_MAP);
 
@@ -39,20 +40,25 @@ function App() {
   const [queueIndex, setQueueIndex] = useState(0);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
   const [allWords, setAllWords] = useState<string[]>([]);
+  const [feedback, setFeedback] = useState<'correct' | 'skipped' | null>(null);
 
   const currentWord = queue[queueIndex] ?? '';
   const clickTimerRef = useRef<number | null>(null);
+  const feedbackTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
     return () => {
       if (clickTimerRef.current) {
         window.clearTimeout(clickTimerRef.current);
       }
+      if (feedbackTimerRef.current) {
+        window.clearTimeout(feedbackTimerRef.current);
+      }
     };
   }, []);
 
   useEffect(() => {
-    if (phase !== 'playing' || timeLeft <= 0) {
+    if (phase !== 'playing' || timeLeft <= 0 || settingsOpen) {
       return;
     }
 
@@ -67,7 +73,7 @@ function App() {
     }, 1000);
 
     return () => window.clearInterval(timer);
-  }, [phase, timeLeft]);
+  }, [phase, timeLeft, settingsOpen]);
 
   useEffect(() => {
     if (phase === 'playing' && timeLeft === 0) {
@@ -76,7 +82,7 @@ function App() {
   }, [phase, timeLeft]);
 
   useEffect(() => {
-    if (phase !== 'playing') {
+    if (phase !== 'playing' || settingsOpen) {
       return;
     }
 
@@ -93,7 +99,7 @@ function App() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase, queue, queueIndex]);
+  }, [phase, queue, queueIndex, settingsOpen]);
 
   function selectCategory(nextCategory: string) {
     setError(null);
@@ -131,20 +137,31 @@ function App() {
   }
 
   function markCurrent(result: 'correct' | 'skipped') {
-    if (!currentWord) {
+    if (!currentWord || feedback || settingsOpen) {
       return;
     }
 
-    setHistory((prev) => [...prev, { word: currentWord, result }]);
+    const wordAtPress = currentWord;
+    setFeedback(result);
 
-    setQueueIndex((index) => {
-      const nextIndex = index + 1;
-      if (nextIndex >= queue.length) {
-        setQueue(shuffle(allWords));
-        return 0;
-      }
-      return nextIndex;
-    });
+    if (feedbackTimerRef.current) {
+      window.clearTimeout(feedbackTimerRef.current);
+    }
+
+    feedbackTimerRef.current = window.setTimeout(() => {
+      feedbackTimerRef.current = null;
+      setFeedback(null);
+      setHistory((prev) => [...prev, { word: wordAtPress, result }]);
+
+      setQueueIndex((index) => {
+        const nextIndex = index + 1;
+        if (nextIndex >= queue.length) {
+          setQueue(shuffle(allWords));
+          return 0;
+        }
+        return nextIndex;
+      });
+    }, FEEDBACK_DELAY_MS);
   }
 
   function handleWordClick() {
@@ -181,7 +198,7 @@ function App() {
   }
 
   const tiltStatus = useTiltControls(
-    tiltEnabled && phase === 'playing',
+    tiltEnabled && phase === 'playing' && !settingsOpen,
     tiltInverted,
     () => markCurrent('correct'),
     () => markCurrent('skipped')
@@ -348,19 +365,19 @@ function App() {
 
         <button
           type="button"
-          className="word-card tappable"
+          className={`word-card tappable${feedback ? ` ${feedback}` : ''}`}
           onClick={handleWordClick}
           onDoubleClick={handleWordDoubleClick}
-          disabled={!currentWord}
+          disabled={!currentWord || !!feedback}
         >
           {currentWord || 'Loading...'}
         </button>
 
         <div className="controls">
-          <button className="skip" onClick={() => markCurrent('skipped')} disabled={!currentWord}>
+          <button className="skip" onClick={() => markCurrent('skipped')} disabled={!currentWord || !!feedback}>
             Skip
           </button>
-          <button className="primary" onClick={() => markCurrent('correct')} disabled={!currentWord}>
+          <button className="primary" onClick={() => markCurrent('correct')} disabled={!currentWord || !!feedback}>
             Correct
           </button>
         </div>
