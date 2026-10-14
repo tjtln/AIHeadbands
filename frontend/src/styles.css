@@ -434,6 +434,66 @@ button {
   opacity: 0.85;
 }
 
+.calibration-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2,6,23,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 20;
+}
+
+.calibration-card {
+  width: min(92vw, 420px);
+  background: rgba(15, 23, 42, 0.97);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(2,6,23,0.6);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.calibration-card h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.calibration-card p {
+  margin: 0;
+  opacity: 0.85;
+  font-weight: 500;
+}
+
+.calibration-card button {
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(15,23,42,0.35);
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 700;
+}
+
+.calibration-card .primary {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  border: none;
+}
+
+.calibration-reading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .countdown-screen {
   display: flex;
   flex-direction: column;

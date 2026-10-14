@@ -1,6 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import topicsData from './data/topics.json';
-import { isTiltSupported, requestTiltPermission, useTiltControls } from './useTiltControls';
+import {
+  DEFAULT_TILT_PROFILE,
+  isTiltSupported,
+  requestTiltPermission,
+  useRawTilt,
+  useTiltControls,
+  type TiltProfile
+} from './useTiltControls';
+
+type CalibrationStep = 'neutral' | 'down' | 'up';
 
 const DEFAULT_DURATION = 180;
 const CLICK_DELAY_MS = 220;
@@ -35,7 +44,12 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   const [tiltEnabled, setTiltEnabled] = useState(false);
   const [tiltError, setTiltError] = useState<string | null>(null);
-  const [tiltInverted, setTiltInverted] = useState(false);
+  const [tiltProfile, setTiltProfile] = useState<TiltProfile>(DEFAULT_TILT_PROFILE);
+  const [tiltCalibrated, setTiltCalibrated] = useState(false);
+  const [calibrating, setCalibrating] = useState(false);
+  const [calibrationStep, setCalibrationStep] = useState<CalibrationStep>('neutral');
+  const [calibrationBaseline, setCalibrationBaseline] = useState<number | null>(null);
+  const [calibrationDown, setCalibrationDown] = useState<number | null>(null);
 
   const [queue, setQueue] = useState<string[]>([]);
   const [queueIndex, setQueueIndex] = useState(0);
@@ -218,11 +232,95 @@ function App() {
   }
 
   const tiltStatus = useTiltControls(
-    tiltEnabled && phase === 'playing' && !settingsOpen,
-    tiltInverted,
+    tiltEnabled && phase === 'playing' && !settingsOpen && !calibrating,
+    tiltProfile,
     () => markCurrent('correct'),
     () => markCurrent('skipped')
   );
+
+  const rawTilt = useRawTilt(calibrating);
+
+  function startCalibration() {
+    setCalibrationStep('neutral');
+    setCalibrationBaseline(null);
+    setCalibrationDown(null);
+    setCalibrating(true);
+  }
+
+  function cancelCalibration() {
+    setCalibrating(false);
+  }
+
+  function calibrationCaptureNeutral() {
+    if (rawTilt === null) {
+      return;
+    }
+    setCalibrationBaseline(rawTilt);
+    setCalibrationStep('down');
+  }
+
+  function calibrationCaptureDown() {
+    if (rawTilt === null || calibrationBaseline === null) {
+      return;
+    }
+    setCalibrationDown(rawTilt - calibrationBaseline);
+    setCalibrationStep('up');
+  }
+
+  function calibrationCaptureUp() {
+    if (rawTilt === null || calibrationBaseline === null || calibrationDown === null) {
+      return;
+    }
+    const upValue = rawTilt - calibrationBaseline;
+    setTiltProfile({ down: calibrationDown, up: upValue });
+    setTiltCalibrated(true);
+    setCalibrating(false);
+  }
+
+  function renderCalibrationOverlay() {
+    if (!calibrating) {
+      return null;
+    }
+
+    const liveDiff = rawTilt !== null && calibrationBaseline !== null ? Math.round(rawTilt - calibrationBaseline) : null;
+
+    return (
+      <div className="calibration-overlay">
+        <div className="calibration-card">
+          <h2>Calibrate Tilt</h2>
+
+          {calibrationStep === 'neutral' ? (
+            <>
+              <p>Hold the phone exactly how you will during play, then tap Set.</p>
+              <button type="button" className="primary" onClick={calibrationCaptureNeutral}>
+                Set Neutral
+              </button>
+            </>
+          ) : calibrationStep === 'down' ? (
+            <>
+              <p>Now tilt into your CORRECT position and hold it, then tap Set.</p>
+              {liveDiff !== null ? <div className="calibration-reading">{liveDiff}°</div> : null}
+              <button type="button" className="primary" onClick={calibrationCaptureDown}>
+                Set Correct
+              </button>
+            </>
+          ) : (
+            <>
+              <p>Now tilt into your SKIP position and hold it, then tap Set.</p>
+              {liveDiff !== null ? <div className="calibration-reading">{liveDiff}°</div> : null}
+              <button type="button" className="primary" onClick={calibrationCaptureUp}>
+                Set Skip
+              </button>
+            </>
+          )}
+
+          <button type="button" onClick={cancelCalibration}>
+            Cancel
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   function endRoundEarly() {
     setSettingsOpen(false);
@@ -314,14 +412,16 @@ function App() {
                 re-calibrates automatically when you rotate.
               </p>
               {tiltEnabled ? (
-                <button type="button" className="invert-toggle" onClick={() => setTiltInverted((value) => !value)}>
-                  {tiltInverted ? 'Direction flipped — tap to undo' : 'Feels backwards? Flip direction'}
+                <button type="button" className="invert-toggle" onClick={startCalibration}>
+                  {tiltCalibrated ? 'Recalibrate tilt' : 'Calibrate tilt to your grip (recommended)'}
                 </button>
               ) : null}
               {tiltError ? <div className="banner error">{tiltError}</div> : null}
             </div>
           ) : null}
         </div>
+
+        {renderCalibrationOverlay()}
       </div>
     );
   }
@@ -435,8 +535,8 @@ function App() {
                 {tiltEnabled ? 'Tilt Controls: On' : 'Tilt Controls: Off'}
               </button>
               {tiltEnabled ? (
-                <button type="button" className="invert-toggle" onClick={() => setTiltInverted((value) => !value)}>
-                  {tiltInverted ? 'Direction flipped — tap to undo' : 'Feels backwards? Flip direction'}
+                <button type="button" className="invert-toggle" onClick={startCalibration}>
+                  {tiltCalibrated ? 'Recalibrate tilt' : 'Calibrate tilt to your grip (recommended)'}
                 </button>
               ) : null}
               {tiltError ? <div className="banner error">{tiltError}</div> : null}
@@ -450,6 +550,8 @@ function App() {
           </div>
         </aside>
       ) : null}
+
+      {renderCalibrationOverlay()}
     </div>
   );
 }

@@ -1,12 +1,26 @@
 import { useEffect, useRef, useState } from 'react';
 
-// Correct was firing far too easily and skip was nearly unreachable at 28/16 —
-// swapping the balance the other way: require a deliberate tilt for correct,
-// and much less motion to register a skip.
-const DOWN_THRESHOLD = 36;
-const UP_THRESHOLD = 10;
-const NEUTRAL_THRESHOLD = 8;
+// How much of the demonstrated calibration tilt you need to reach to trigger —
+// lower than 1.0 so you don't have to hit your exact calibration extreme every time.
+const TRIGGER_FRACTION = 0.55;
+const NEUTRAL_FRACTION = 0.25;
+const MIN_NEUTRAL = 4;
+const MIN_SAMPLE_MAGNITUDE = 6;
 const COOLDOWN_MS = 1000;
+
+/**
+ * Signed tilt values (relative to whatever baseline was active when they were
+ * captured) demonstrated during calibration for each gesture. The sign itself
+ * carries the direction, so there's no separate "inverted" concept needed —
+ * whichever way the user actually tilted is what gets matched at runtime.
+ */
+export interface TiltProfile {
+  down: number;
+  up: number;
+}
+
+// Reasonable starting point before the user calibrates their own gesture.
+export const DEFAULT_TILT_PROFILE: TiltProfile = { down: 25, up: -25 };
 
 interface DeviceOrientationEventIOS {
   requestPermission?: () => Promise<'granted' | 'denied'>;
@@ -34,8 +48,6 @@ export async function requestTiltPermission(): Promise<boolean> {
   return true;
 }
 
-export type TiltStatus = 'calibrating' | 'ready';
-
 function getLandscapeQuery(): MediaQueryList | null {
   return typeof window.matchMedia === 'function' ? window.matchMedia('(orientation: landscape)') : null;
 }
@@ -60,9 +72,35 @@ function getEffectiveTilt(event: DeviceOrientationEvent): number | null {
   return isLandscapeLayout() ? event.gamma : event.beta;
 }
 
+/** Live raw tilt reading (axis-aware, not baseline-relative) — used by the calibration UI. */
+export function useRawTilt(active: boolean): number | null {
+  const [tilt, setTilt] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (!active) {
+      setTilt(null);
+      return;
+    }
+
+    function handle(event: DeviceOrientationEvent) {
+      const value = getEffectiveTilt(event);
+      if (value !== null) {
+        setTilt(value);
+      }
+    }
+
+    window.addEventListener('deviceorientation', handle);
+    return () => window.removeEventListener('deviceorientation', handle);
+  }, [active]);
+
+  return tilt;
+}
+
+export type TiltStatus = 'calibrating' | 'ready';
+
 export function useTiltControls(
   active: boolean,
-  inverted: boolean,
+  profile: TiltProfile,
   onCorrect: () => void,
   onSkip: () => void
 ): TiltStatus {
@@ -76,11 +114,11 @@ export function useTiltControls(
   const cooldownUntilRef = useRef(0);
   const onCorrectRef = useRef(onCorrect);
   const onSkipRef = useRef(onSkip);
-  const invertedRef = useRef(inverted);
+  const profileRef = useRef(profile);
 
   onCorrectRef.current = onCorrect;
   onSkipRef.current = onSkip;
-  invertedRef.current = inverted;
+  profileRef.current = profile;
 
   useEffect(() => {
     if (!active) {
@@ -112,8 +150,7 @@ export function useTiltControls(
         return;
       }
 
-      const rawDiff = tilt - baselineRef.current;
-      const diff = invertedRef.current ? -rawDiff : rawDiff;
+      const diff = tilt - baselineRef.current;
 
       // Hard cooldown after any trigger — ignore everything (including the
       // neutral-zone reset) until it expires, so a held tilt can't immediately
@@ -122,19 +159,34 @@ export function useTiltControls(
         return;
       }
 
-      if (diff > DOWN_THRESHOLD) {
+      const { down, up } = profileRef.current;
+      const downMagnitude = Math.abs(down);
+      const upMagnitude = Math.abs(up);
+      const neutralThreshold = Math.max(MIN_NEUTRAL, Math.min(downMagnitude, upMagnitude) * NEUTRAL_FRACTION);
+
+      const downHit =
+        downMagnitude >= MIN_SAMPLE_MAGNITUDE &&
+        Math.sign(diff) === Math.sign(down) &&
+        Math.abs(diff) > downMagnitude * TRIGGER_FRACTION;
+
+      const upHit =
+        upMagnitude >= MIN_SAMPLE_MAGNITUDE &&
+        Math.sign(diff) === Math.sign(up) &&
+        Math.abs(diff) > upMagnitude * TRIGGER_FRACTION;
+
+      if (downHit) {
         if (lastFiredRef.current !== 'correct') {
           lastFiredRef.current = 'correct';
           cooldownUntilRef.current = Date.now() + COOLDOWN_MS;
           onCorrectRef.current();
         }
-      } else if (diff < -UP_THRESHOLD) {
+      } else if (upHit) {
         if (lastFiredRef.current !== 'skip') {
           lastFiredRef.current = 'skip';
           cooldownUntilRef.current = Date.now() + COOLDOWN_MS;
           onSkipRef.current();
         }
-      } else if (Math.abs(diff) < NEUTRAL_THRESHOLD) {
+      } else if (Math.abs(diff) < neutralThreshold) {
         lastFiredRef.current = null;
       }
     }
