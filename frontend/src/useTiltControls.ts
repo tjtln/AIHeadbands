@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 
-const DOWN_THRESHOLD = 35;
-const UP_THRESHOLD = 35;
-const NEUTRAL_THRESHOLD = 15;
+const DOWN_THRESHOLD = 28;
+// Tilting the phone back (chin up) has a much smaller comfortable range of motion
+// than tilting it down, so skip needs a lower threshold or it's rarely reachable.
+const UP_THRESHOLD = 16;
+const NEUTRAL_THRESHOLD = 10;
+const COOLDOWN_MS = 1000;
 
 interface DeviceOrientationEventIOS {
   requestPermission?: () => Promise<'granted' | 'denied'>;
@@ -69,6 +72,7 @@ export function useTiltControls(
   // between — a strict return-to-neutral gate can get skipped over entirely
   // by a fast tilt that jumps straight from one threshold to the other.
   const lastFiredRef = useRef<'correct' | 'skip' | null>(null);
+  const cooldownUntilRef = useRef(0);
   const onCorrectRef = useRef(onCorrect);
   const onSkipRef = useRef(onSkip);
   const invertedRef = useRef(inverted);
@@ -88,6 +92,7 @@ export function useTiltControls(
     function recalibrate() {
       baselineRef.current = null;
       lastFiredRef.current = null;
+      cooldownUntilRef.current = 0;
       setStatus('calibrating');
     }
 
@@ -109,14 +114,23 @@ export function useTiltControls(
       const rawDiff = tilt - baselineRef.current;
       const diff = invertedRef.current ? -rawDiff : rawDiff;
 
+      // Hard cooldown after any trigger — ignore everything (including the
+      // neutral-zone reset) until it expires, so a held tilt can't immediately
+      // re-fire the moment the direction-based gate would otherwise allow it.
+      if (Date.now() < cooldownUntilRef.current) {
+        return;
+      }
+
       if (diff > DOWN_THRESHOLD) {
         if (lastFiredRef.current !== 'correct') {
           lastFiredRef.current = 'correct';
+          cooldownUntilRef.current = Date.now() + COOLDOWN_MS;
           onCorrectRef.current();
         }
       } else if (diff < -UP_THRESHOLD) {
         if (lastFiredRef.current !== 'skip') {
           lastFiredRef.current = 'skip';
+          cooldownUntilRef.current = Date.now() + COOLDOWN_MS;
           onSkipRef.current();
         }
       } else if (Math.abs(diff) < NEUTRAL_THRESHOLD) {
