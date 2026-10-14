@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 
-const DOWN_THRESHOLD = 28;
-// Tilting the phone back (chin up) has a much smaller comfortable range of motion
-// than tilting it down, so skip needs a lower threshold or it's rarely reachable.
-const UP_THRESHOLD = 16;
-const NEUTRAL_THRESHOLD = 10;
+// Correct was firing far too easily and skip was nearly unreachable at 28/16 —
+// swapping the balance the other way: require a deliberate tilt for correct,
+// and much less motion to register a skip.
+const DOWN_THRESHOLD = 36;
+const UP_THRESHOLD = 10;
+const NEUTRAL_THRESHOLD = 8;
 const COOLDOWN_MS = 1000;
 
 interface DeviceOrientationEventIOS {

@@ -1,4 +1,4 @@
-# AI Headbands
+# TJs Headbands
 
 This repository contains a TypeScript web app inspired by the mobile game Headbands. Pick a topic, and the app shows one word at a time on a full-screen game board with a countdown timer and quick settings controls.
 

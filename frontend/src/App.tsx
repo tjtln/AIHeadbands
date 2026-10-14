@@ -5,10 +5,11 @@ import { isTiltSupported, requestTiltPermission, useTiltControls } from './useTi
 const DEFAULT_DURATION = 180;
 const CLICK_DELAY_MS = 220;
 const FEEDBACK_DELAY_MS = 280;
+const COUNTDOWN_SECONDS = 3;
 const CATEGORY_MAP: Record<string, Record<string, string[]>> = topicsData;
 const CATEGORY_NAMES = Object.keys(CATEGORY_MAP);
 
-type Phase = 'setup' | 'playing' | 'finished';
+type Phase = 'setup' | 'countdown' | 'playing' | 'finished';
 
 type HistoryEntry = {
   word: string;
@@ -41,6 +42,7 @@ function App() {
   const [history, setHistory] = useState<HistoryEntry[]>([]);
   const [allWords, setAllWords] = useState<string[]>([]);
   const [feedback, setFeedback] = useState<'correct' | 'skipped' | null>(null);
+  const [countdown, setCountdown] = useState(COUNTDOWN_SECONDS);
 
   const currentWord = queue[queueIndex] ?? '';
   const clickTimerRef = useRef<number | null>(null);
@@ -80,6 +82,23 @@ function App() {
       setPhase('finished');
     }
   }, [phase, timeLeft]);
+
+  useEffect(() => {
+    if (phase !== 'countdown') {
+      return;
+    }
+
+    if (countdown <= 0) {
+      setPhase('playing');
+      return;
+    }
+
+    const timer = window.setTimeout(() => {
+      setCountdown((previous) => previous - 1);
+    }, 1000);
+
+    return () => window.clearTimeout(timer);
+  }, [phase, countdown]);
 
   useEffect(() => {
     if (phase !== 'playing' || settingsOpen) {
@@ -133,7 +152,8 @@ function App() {
     setHistory([]);
     setTimeLeft(durationSeconds);
     setSettingsOpen(false);
-    setPhase('playing');
+    setCountdown(COUNTDOWN_SECONDS);
+    setPhase('countdown');
   }
 
   function markCurrent(result: 'correct' | 'skipped') {
@@ -301,6 +321,18 @@ function App() {
               {tiltError ? <div className="banner error">{tiltError}</div> : null}
             </div>
           ) : null}
+        </div>
+      </div>
+    );
+  }
+
+  if (phase === 'countdown') {
+    return (
+      <div className="app-shell setup-shell">
+        <div className="countdown-screen">
+          <p className="setup-subtitle">{category} › {topic}</p>
+          <div key={countdown} className="countdown-number">{countdown > 0 ? countdown : 'Go!'}</div>
+          <p className="tilt-hint">Get the phone in position — round starts automatically.</p>
         </div>
       </div>
     );
