@@ -33,6 +33,7 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   const [tiltEnabled, setTiltEnabled] = useState(false);
   const [tiltError, setTiltError] = useState<string | null>(null);
+  const [tiltInverted, setTiltInverted] = useState(false);
 
   const [queue, setQueue] = useState<string[]>([]);
   const [queueIndex, setQueueIndex] = useState(0);
@@ -181,6 +182,7 @@ function App() {
 
   const tiltStatus = useTiltControls(
     tiltEnabled && phase === 'playing',
+    tiltInverted,
     () => markCurrent('correct'),
     () => markCurrent('skipped')
   );
@@ -270,7 +272,15 @@ function App() {
               <button type="button" className={`tilt-toggle${tiltEnabled ? ' active' : ''}`} onClick={() => void toggleTilt()}>
                 {tiltEnabled ? 'Tilt Controls: On' : 'Tilt Controls: Off'}
               </button>
-              <p className="tilt-hint">Tilt the phone down for correct, up to skip — hold it to your forehead.</p>
+              <p className="tilt-hint">
+                Tilt the phone down for correct, up to skip — works in portrait or landscape, and
+                re-calibrates automatically when you rotate.
+              </p>
+              {tiltEnabled ? (
+                <button type="button" className="invert-toggle" onClick={() => setTiltInverted((value) => !value)}>
+                  {tiltInverted ? 'Direction flipped — tap to undo' : 'Feels backwards? Flip direction'}
+                </button>
+              ) : null}
               {tiltError ? <div className="banner error">{tiltError}</div> : null}
             </div>
           ) : null}
@@ -375,6 +385,11 @@ function App() {
               <button type="button" className={`tilt-toggle${tiltEnabled ? ' active' : ''}`} onClick={() => void toggleTilt()}>
                 {tiltEnabled ? 'Tilt Controls: On' : 'Tilt Controls: Off'}
               </button>
+              {tiltEnabled ? (
+                <button type="button" className="invert-toggle" onClick={() => setTiltInverted((value) => !value)}>
+                  {tiltInverted ? 'Direction flipped — tap to undo' : 'Feels backwards? Flip direction'}
+                </button>
+              ) : null}
               {tiltError ? <div className="banner error">{tiltError}</div> : null}
             </div>
           ) : null}

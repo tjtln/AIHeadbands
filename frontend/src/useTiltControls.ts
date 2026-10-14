@@ -32,15 +32,55 @@ export async function requestTiltPermission(): Promise<boolean> {
 
 export type TiltStatus = 'calibrating' | 'ready';
 
-export function useTiltControls(active: boolean, onCorrect: () => void, onSkip: () => void): TiltStatus {
+function getScreenAngle(): number {
+  const orientation = window.screen?.orientation;
+  if (orientation && typeof orientation.angle === 'number') {
+    return orientation.angle;
+  }
+  // Legacy iOS Safari fallback.
+  const legacyAngle = (window as unknown as { orientation?: number }).orientation;
+  return typeof legacyAngle === 'number' ? legacyAngle : 0;
+}
+
+/**
+ * Device orientation's beta/gamma axes are fixed to the physical device, not the screen.
+ * Rotating into landscape swaps which axis corresponds to "tilting the top of the phone
+ * away from you" — this picks the right axis (and sign) for whatever rotation is active.
+ */
+function getEffectiveTilt(event: DeviceOrientationEvent, screenAngle: number): number | null {
+  if (event.beta === null || event.gamma === null) {
+    return null;
+  }
+
+  switch (screenAngle) {
+    case 90:
+      return event.gamma;
+    case -90:
+    case 270:
+      return -event.gamma;
+    case 180:
+      return -event.beta;
+    default:
+      return event.beta;
+  }
+}
+
+export function useTiltControls(
+  active: boolean,
+  inverted: boolean,
+  onCorrect: () => void,
+  onSkip: () => void
+): TiltStatus {
   const [status, setStatus] = useState<TiltStatus>('calibrating');
   const baselineRef = useRef<number | null>(null);
   const armedRef = useRef(true);
   const onCorrectRef = useRef(onCorrect);
   const onSkipRef = useRef(onSkip);
+  const invertedRef = useRef(inverted);
 
   onCorrectRef.current = onCorrect;
   onSkipRef.current = onSkip;
+  invertedRef.current = inverted;
 
   useEffect(() => {
     if (!active) {
@@ -50,22 +90,28 @@ export function useTiltControls(active: boolean, onCorrect: () => void, onSkip: 
       return;
     }
 
-    setStatus('calibrating');
-    baselineRef.current = null;
-    armedRef.current = true;
+    function recalibrate() {
+      baselineRef.current = null;
+      armedRef.current = true;
+      setStatus('calibrating');
+    }
+
+    recalibrate();
 
     function handleOrientation(event: DeviceOrientationEvent) {
-      if (event.beta === null) {
+      const tilt = getEffectiveTilt(event, getScreenAngle());
+      if (tilt === null) {
         return;
       }
 
       if (baselineRef.current === null) {
-        baselineRef.current = event.beta;
+        baselineRef.current = tilt;
         setStatus('ready');
         return;
       }
 
-      const diff = event.beta - baselineRef.current;
+      const rawDiff = tilt - baselineRef.current;
+      const diff = invertedRef.current ? -rawDiff : rawDiff;
 
       if (armedRef.current) {
         if (diff > DOWN_THRESHOLD) {
@@ -80,8 +126,17 @@ export function useTiltControls(active: boolean, onCorrect: () => void, onSkip: 
       }
     }
 
+    // Rotating mid-round changes which physical axis maps to "tilt" — recalibrate
+    // against the new orientation rather than carrying over a stale baseline.
     window.addEventListener('deviceorientation', handleOrientation);
-    return () => window.removeEventListener('deviceorientation', handleOrientation);
+    window.addEventListener('orientationchange', recalibrate);
+    window.screen?.orientation?.addEventListener?.('change', recalibrate);
+
+    return () => {
+      window.removeEventListener('deviceorientation', handleOrientation);
+      window.removeEventListener('orientationchange', recalibrate);
+      window.screen?.orientation?.removeEventListener?.('change', recalibrate);
+    };
   }, [active]);
 
   return status;

@@ -409,6 +409,19 @@ button {
   font-weight: 500;
 }
 
+.invert-toggle {
+  appearance: none;
+  align-self: flex-start;
+  border: 1px dashed rgba(255,255,255,0.3);
+  background: transparent;
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
 .results-card {
   align-items: stretch;
 }
@@ -491,5 +504,48 @@ button {
 
   .word-card {
     min-height: 46vh;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 520px) {
+  .app-shell {
+    padding: 12px 20px 16px;
+  }
+
+  .top-bar {
+    align-items: center;
+  }
+
+  .timer-wrap {
+    padding: 6px 14px;
+    min-width: 100px;
+  }
+
+  .timer-wrap strong {
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+  }
+
+  .board-area {
+    gap: 10px;
+    padding: 4px 0;
+  }
+
+  .word-card {
+    min-height: 40vh;
+    padding: 16px;
+    font-size: clamp(2rem, 6vw, 4.5rem);
+  }
+
+  .hint {
+    font-size: 0.75rem;
+  }
+
+  .settings-panel {
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    width: auto;
+    overflow-y: auto;
   }
 }
