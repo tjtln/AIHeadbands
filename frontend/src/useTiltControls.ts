@@ -32,37 +32,28 @@ export async function requestTiltPermission(): Promise<boolean> {
 
 export type TiltStatus = 'calibrating' | 'ready';
 
-function getScreenAngle(): number {
-  const orientation = window.screen?.orientation;
-  if (orientation && typeof orientation.angle === 'number') {
-    return orientation.angle;
-  }
-  // Legacy iOS Safari fallback.
-  const legacyAngle = (window as unknown as { orientation?: number }).orientation;
-  return typeof legacyAngle === 'number' ? legacyAngle : 0;
+function getLandscapeQuery(): MediaQueryList | null {
+  return typeof window.matchMedia === 'function' ? window.matchMedia('(orientation: landscape)') : null;
+}
+
+function isLandscapeLayout(): boolean {
+  const query = getLandscapeQuery();
+  return query ? query.matches : window.innerWidth > window.innerHeight;
 }
 
 /**
  * Device orientation's beta/gamma axes are fixed to the physical device, not the screen.
  * Rotating into landscape swaps which axis corresponds to "tilting the top of the phone
- * away from you" — this picks the right axis (and sign) for whatever rotation is active.
+ * away from you". `screen.orientation.angle` / `window.orientation` are unreliable inside
+ * an installed standalone iOS PWA (often stuck at 0 since there's no browser chrome to
+ * rotate), so this goes off the actual rendered CSS layout instead, which is always correct.
  */
-function getEffectiveTilt(event: DeviceOrientationEvent, screenAngle: number): number | null {
+function getEffectiveTilt(event: DeviceOrientationEvent): number | null {
   if (event.beta === null || event.gamma === null) {
     return null;
   }
 
-  switch (screenAngle) {
-    case 90:
-      return event.gamma;
-    case -90:
-    case 270:
-      return -event.gamma;
-    case 180:
-      return -event.beta;
-    default:
-      return event.beta;
-  }
+  return isLandscapeLayout() ? event.gamma : event.beta;
 }
 
 export function useTiltControls(
@@ -103,7 +94,7 @@ export function useTiltControls(
     recalibrate();
 
     function handleOrientation(event: DeviceOrientationEvent) {
-      const tilt = getEffectiveTilt(event, getScreenAngle());
+      const tilt = getEffectiveTilt(event);
       if (tilt === null) {
         return;
       }
@@ -135,14 +126,16 @@ export function useTiltControls(
 
     // Rotating mid-round changes which physical axis maps to "tilt" — recalibrate
     // against the new orientation rather than carrying over a stale baseline.
+    const landscapeQuery = getLandscapeQuery();
+
     window.addEventListener('deviceorientation', handleOrientation);
     window.addEventListener('orientationchange', recalibrate);
-    window.screen?.orientation?.addEventListener?.('change', recalibrate);
+    landscapeQuery?.addEventListener('change', recalibrate);
 
     return () => {
       window.removeEventListener('deviceorientation', handleOrientation);
       window.removeEventListener('orientationchange', recalibrate);
-      window.screen?.orientation?.removeEventListener?.('change', recalibrate);
+      landscapeQuery?.removeEventListener('change', recalibrate);
     };
   }, [active]);
 
