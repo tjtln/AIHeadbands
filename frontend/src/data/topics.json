@@ -54,6 +54,16 @@
       "snowman", "icicle", "frost", "thermometer", "forecast", "weatherman", "monsoon", "sandstorm", "avalanche", "earthquake",
       "volcano", "tsunami", "storm", "thunderstorm", "snowflake", "drizzle", "mist", "dew", "humidity", "cyclone",
       "typhoon", "rain boots", "sunburn", "sunscreen", "weather vane", "storm chaser", "wind chill", "sunrise", "sunset"
+    ],
+    "Medications": [
+      "Tylenol", "Advil", "ibuprofen", "aspirin", "Aleve", "Motrin", "Excedrin", "Benadryl", "Claritin", "Zyrtec",
+      "Allegra", "Sudafed", "NyQuil", "DayQuil", "Mucinex", "Robitussin", "cough syrup", "cough drops", "Tums", "Pepto-Bismol",
+      "Imodium", "Alka-Seltzer", "Gas-X", "Prilosec", "Miralax", "Midol", "melatonin", "ZzzQuil", "Dramamine", "Neosporin",
+      "hydrocortisone", "Vicks VapoRub", "Flonase", "Visine", "Emergen-C", "Airborne", "Flintstones vitamins", "multivitamin", "fish oil", "penicillin",
+      "amoxicillin", "Z-Pak", "antibiotics", "Tamiflu", "insulin", "EpiPen", "inhaler", "Adderall", "Ritalin", "Xanax",
+      "Zoloft", "Prozac", "Lexapro", "Ambien", "Valium", "Vicodin", "Percocet", "OxyContin", "morphine", "Viagra",
+      "Cialis", "birth control", "Plan B", "Ozempic", "Lipitor", "metformin", "prednisone", "steroids", "Narcan", "Rogaine",
+      "Botox", "Accutane"
     ]
   },
   "Media": {
@@ -97,6 +107,15 @@
       "James Charles", "DanTDM", "Dream", "Technoblade", "Valkyrae", "Ludwig", "Sidemen", "Mark Rober", "Rhett and Link", "Casey Neistat",
       "Zach King", "JoJo Siwa", "Ryan's World", "Cocomelon", "Khaby Lame", "Bella Poarch", "Twitch", "YouTube", "TikTok", "Unbox Therapy",
       "Alix Earle", "Druski"
+    ],
+    "Movies": [
+      "Titanic", "Mean Girls", "Shrek", "Top Gun", "The Hangover", "Forrest Gump", "Home Alone", "Grease", "Dirty Dancing", "The Lion King",
+      "Frozen", "Toy Story", "Finding Nemo", "The Notebook", "Pretty Woman", "Legally Blonde", "Clueless", "Step Brothers", "Anchorman", "Elf",
+      "Superbad", "Bridesmaids", "Pitch Perfect", "The Godfather", "Rocky", "Jaws", "Back to the Future", "Ghostbusters", "The Wizard of Oz", "Pirates of the Caribbean",
+      "Fast & Furious", "Mission: Impossible", "James Bond", "Barbie", "Oppenheimer", "Gladiator", "The Sandlot", "Space Jam", "Cars", "Up",
+      "Inside Out", "Despicable Me", "Minions", "Madagascar", "Kung Fu Panda", "Mamma Mia!", "The Princess Diaries", "13 Going on 30", "She's the Man", "Napoleon Dynamite",
+      "Dumb and Dumber", "Happy Gilmore", "Billy Madison", "Grown Ups", "Talladega Nights", "Wedding Crashers", "Mrs. Doubtfire", "Ferris Bueller's Day Off", "The Breakfast Club", "Twister",
+      "Wicked", "Night at the Museum", "Shrek 2", "Hocus Pocus", "Freaky Friday", "The Parent Trap", "Remember the Titans", "Cheaper by the Dozen"
     ]
   },
   "Geography": {
@@ -182,6 +201,15 @@
       "Rob Gronkowski", "Deion Sanders", "Aaron Judge", "Mike Trout", "Alex Rodriguez", "Barry Bonds", "Ken Griffey Jr.", "Sidney Crosby", "Alex Ovechkin", "Venus Williams",
       "Coco Gauff", "Rafael Nadal", "Novak Djokovic", "Floyd Mayweather", "Jake Paul", "Kylian Mbappe", "Neymar", "Alex Morgan", "Megan Rapinoe", "Mia Hamm",
       "Katie Ledecky", "Jesse Owens", "Danica Patrick", "Jeff Gordon", "Lewis Hamilton", "Bo Jackson"
+    ],
+    "Sports Teams": [
+      "Green Bay Packers", "Chicago Bears", "Minnesota Vikings", "Detroit Lions", "Dallas Cowboys", "New York Giants", "Philadelphia Eagles", "Washington Commanders", "San Francisco 49ers", "Seattle Seahawks",
+      "Los Angeles Rams", "Arizona Cardinals", "Kansas City Chiefs", "Las Vegas Raiders", "Denver Broncos", "Los Angeles Chargers", "New England Patriots", "Buffalo Bills", "Miami Dolphins", "New York Jets",
+      "Pittsburgh Steelers", "Baltimore Ravens", "Cleveland Browns", "Cincinnati Bengals", "Tampa Bay Buccaneers", "New Orleans Saints", "Atlanta Falcons", "Carolina Panthers", "Houston Texans", "Indianapolis Colts",
+      "Tennessee Titans", "Jacksonville Jaguars", "Los Angeles Lakers", "Boston Celtics", "Chicago Bulls", "Golden State Warriors", "Miami Heat", "New York Knicks", "Milwaukee Bucks", "Brooklyn Nets",
+      "Dallas Mavericks", "Phoenix Suns", "San Antonio Spurs", "Philadelphia 76ers", "Denver Nuggets", "Cleveland Cavaliers", "Minnesota Timberwolves", "Oklahoma City Thunder", "New York Yankees", "Boston Red Sox",
+      "Chicago Cubs", "Los Angeles Dodgers", "St. Louis Cardinals", "Atlanta Braves", "San Francisco Giants", "Houston Astros", "Milwaukee Brewers", "Minnesota Twins", "Chicago White Sox", "Detroit Tigers",
+      "New York Mets", "Chicago Blackhawks", "Detroit Red Wings", "Minnesota Wild", "Pittsburgh Penguins", "Toronto Maple Leafs", "Harlem Globetrotters", "Manchester United", "Real Madrid"
     ]
   },
   "Food & Drink": {
@@ -222,6 +250,30 @@
       "rose", "merlot", "pinot grigio", "chardonnay", "prosecco", "bourbon", "scotch", "brandy", "cider", "whiskey sour",
       "Aperol Spritz", "espresso martini", "rum and Coke", "vodka cranberry", "tequila sunrise", "Sex on the Beach", "Mai Tai", "Irish coffee", "flip cup", "kings cup",
       "beer bong", "shotgun a beer", "tailgate", "brewery", "winery", "designated driver", "bar crawl", "cheers"
+    ],
+    "Candy & Snacks": [
+      "Skittles", "M&M's", "Reese's", "Snickers", "Kit Kat", "Twix", "Hershey's", "Milky Way", "3 Musketeers", "Butterfinger",
+      "Starburst", "Sour Patch Kids", "Swedish Fish", "Twizzlers", "Nerds", "Jolly Ranchers", "Airheads", "Warheads", "Laffy Taffy", "Tootsie Roll",
+      "Tootsie Pop", "Blow Pop", "Ring Pop", "Pez", "gummy worms", "Life Savers", "Mike and Ike", "Hot Tamales", "Junior Mints", "Whoppers",
+      "Peeps", "Doritos", "Cheetos", "Hot Cheetos", "Takis", "Pringles", "Lay's", "Ruffles", "Fritos", "Funyuns",
+      "Cheez-It", "Goldfish", "Ritz", "Oreo", "Chips Ahoy", "Pop-Tarts", "Teddy Grahams", "animal crackers", "Rice Krispies Treats", "fruit snacks",
+      "Gushers", "Fruit by the Foot", "Fruit Roll-Ups", "Slim Jim", "beef jerky", "popcorn", "pretzels", "trail mix", "Chex Mix", "Lunchables",
+      "Uncrustables", "granola bar"
+    ],
+    "Breakfast & Cereal": [
+      "pancakes", "waffles", "French toast", "scrambled eggs", "bacon", "sausage", "hash browns", "toast", "bagel", "muffin",
+      "cinnamon roll", "donut", "oatmeal", "yogurt", "granola", "smoothie", "orange juice", "coffee", "omelet", "breakfast burrito",
+      "biscuits and gravy", "avocado toast", "maple syrup", "Eggo", "Egg McMuffin", "McGriddle", "cereal", "Lucky Charms", "Froot Loops", "Cheerios",
+      "Honey Nut Cheerios", "Frosted Flakes", "Cinnamon Toast Crunch", "Cap'n Crunch", "Cocoa Puffs", "Rice Krispies", "Corn Flakes", "Trix", "Apple Jacks", "Fruity Pebbles",
+      "Raisin Bran", "Reese's Puffs", "Golden Grahams", "Frosted Mini-Wheats", "Special K", "Tony the Tiger", "Toucan Sam", "Lucky the Leprechaun", "Snap, Crackle, Pop", "IHOP",
+      "Denny's", "Waffle House"
+    ],
+    "Restaurants": [
+      "Applebee's", "Olive Garden", "Texas Roadhouse", "Buffalo Wild Wings", "Cracker Barrel", "Red Lobster", "Outback Steakhouse", "Chili's", "TGI Fridays", "Red Robin",
+      "IHOP", "Denny's", "Waffle House", "Cheesecake Factory", "Hooters", "Benihana", "P.F. Chang's", "LongHorn Steakhouse", "Golden Corral", "Ruby Tuesday",
+      "Perkins", "Bob Evans", "Dave & Buster's", "Chuck E. Cheese", "Rainforest Cafe", "Hard Rock Cafe", "Margaritaville", "Twin Peaks", "Famous Dave's", "Pizza Ranch",
+      "Noodles & Company", "diner", "steakhouse", "buffet", "food truck", "drive-thru", "pizzeria", "sports bar", "sushi bar", "hot dog stand",
+      "hibachi"
     ]
   },
   "Music": {
@@ -477,6 +529,127 @@
       "Diwali", "Ramadan", "Oktoberfest", "Earth Day", "birthday", "Presidents' Day", "Veterans Day", "Juneteenth", "MLK Day", "Passover",
       "Yom Kippur", "Boxing Day", "Bastille Day", "Canada Day", "Holi", "Christmas Eve", "Good Friday", "Columbus Day", "Leap Day", "Black Friday",
       "Pi Day", "Star Wars Day", "Super Bowl Sunday"
+    ]
+  },
+  "Everyday Life": {
+    "Jobs": [
+      "firefighter", "police officer", "doctor", "nurse", "surgeon", "dentist", "teacher", "plumber", "electrician", "carpenter",
+      "lifeguard", "pilot", "flight attendant", "chef", "waiter", "bartender", "farmer", "mail carrier", "mechanic", "lawyer",
+      "judge", "astronaut", "scientist", "veterinarian", "zookeeper", "cashier", "barber", "hairstylist", "construction worker", "truck driver",
+      "taxi driver", "bus driver", "garbage collector", "janitor", "librarian", "principal", "coach", "referee", "soldier", "artist",
+      "actor", "singer", "DJ", "photographer", "magician", "clown", "fisherman", "cowboy", "lumberjack", "babysitter",
+      "real estate agent", "banker", "accountant", "detective", "security guard", "dog walker", "personal trainer", "pharmacist", "therapist", "tattoo artist",
+      "butcher", "baker", "Uber driver", "YouTuber"
+    ],
+    "Around the House": [
+      "couch", "bed", "pillow", "blanket", "lamp", "TV", "remote", "ceiling fan", "toilet", "toilet paper",
+      "bathtub", "shower", "mirror", "toothbrush", "toothpaste", "hairbrush", "towel", "rug", "curtains", "window",
+      "door", "doorbell", "stairs", "closet", "hanger", "laundry basket", "washing machine", "dryer", "iron", "vacuum",
+      "broom", "mop", "trash can", "light switch", "smoke detector", "thermostat", "alarm clock", "picture frame", "bookshelf", "desk",
+      "recliner", "nightstand", "dresser", "garage", "mailbox", "welcome mat", "house plant", "candle", "fireplace", "air conditioner",
+      "Wi-Fi router", "phone charger", "keys", "shampoo", "plunger", "garden hose", "lawn mower", "fence"
+    ],
+    "In the Kitchen": [
+      "fridge", "freezer", "oven", "stove", "microwave", "toaster", "blender", "dishwasher", "sink", "spatula",
+      "whisk", "ladle", "tongs", "cutting board", "knife", "fork", "spoon", "plate", "bowl", "mug",
+      "wine glass", "frying pan", "pot", "baking sheet", "rolling pin", "measuring cup", "can opener", "bottle opener", "coffee maker", "Keurig",
+      "kettle", "air fryer", "Crock-Pot", "Instant Pot", "mixer", "oven mitt", "apron", "paper towel", "dish soap", "sponge",
+      "Tupperware", "plastic wrap", "lunchbox", "cookie jar", "salt shaker", "pepper grinder", "spice rack", "fridge magnet", "ice cube tray", "grill",
+      "colander", "cheese grater", "peeler", "napkin"
+    ],
+    "Clothes & Accessories": [
+      "hoodie", "T-shirt", "jeans", "shorts", "sweatpants", "leggings", "skirt", "dress", "suit", "tuxedo",
+      "tie", "bow tie", "belt", "socks", "underwear", "bra", "pajamas", "bathrobe", "jacket", "raincoat",
+      "winter coat", "sweater", "vest", "tank top", "crop top", "swimsuit", "bikini", "flip-flops", "sandals", "sneakers",
+      "high heels", "boots", "cowboy boots", "slippers", "Crocs", "baseball cap", "beanie", "cowboy hat", "sunglasses", "glasses",
+      "scarf", "gloves", "mittens", "earmuffs", "watch", "necklace", "bracelet", "earrings", "ring", "purse",
+      "backpack", "wallet", "scrunchie", "headband", "fanny pack", "overalls", "onesie", "jersey", "kilt", "cape"
+    ],
+    "At School": [
+      "backpack", "recess", "cafeteria", "principal", "spelling bee", "field trip", "homework", "pop quiz", "report card", "detention",
+      "hall pass", "locker", "school bus", "substitute teacher", "gym class", "dodgeball", "chalkboard", "whiteboard", "pencil", "pencil sharpener",
+      "eraser", "crayons", "glue stick", "scissors", "ruler", "calculator", "notebook", "textbook", "homeroom", "science fair",
+      "show and tell", "nap time", "fire drill", "prom", "homecoming", "yearbook", "graduation", "cap and gown", "valedictorian", "class clown",
+      "teacher's pet", "library", "nurse's office", "playground", "monkey bars", "swing set", "tetherball", "kickball", "Pledge of Allegiance", "summer break",
+      "snow day", "lunch lady"
+    ],
+    "At the Beach": [
+      "sunscreen", "sandcastle", "beach towel", "seashell", "lifeguard", "flip-flops", "bucket and shovel", "beach umbrella", "beach ball", "waves",
+      "surfboard", "boogie board", "swimsuit", "bikini", "sunglasses", "sunburn", "tan", "seagull", "crab", "jellyfish",
+      "starfish", "shark", "dolphin", "sand dollar", "pier", "boardwalk", "lighthouse", "sand", "ocean", "tide",
+      "cooler", "ice cream truck", "snorkel", "goggles", "kite", "beach volleyball", "palm tree", "coconut", "hammock", "tiki bar",
+      "beach chair", "metal detector", "cannonball", "life jacket", "jet ski", "sailboat"
+    ],
+    "Stores": [
+      "Walmart", "Target", "Costco", "Sam's Club", "Home Depot", "Lowe's", "Menards", "Dollar Tree", "Dollar General", "Bath & Body Works",
+      "Best Buy", "GameStop", "Kohl's", "Macy's", "JCPenney", "TJ Maxx", "Marshalls", "Ross", "Old Navy", "Sephora",
+      "Ulta", "CVS", "Walgreens", "Trader Joe's", "Whole Foods", "Aldi", "Kroger", "Hy-Vee", "Michaels", "Hobby Lobby",
+      "IKEA", "PetSmart", "Petco", "Dick's Sporting Goods", "Cabela's", "Bass Pro Shops", "Scheels", "Barnes & Noble", "Apple Store", "Build-A-Bear",
+      "Claire's", "Spencer's", "Hot Topic", "Toys R Us", "Party City", "Spirit Halloween", "Five Below", "Goodwill", "7-Eleven", "Kwik Trip",
+      "Office Depot", "AutoZone"
+    ],
+    "Body Actions": [
+      "sneeze", "wink", "high five", "yawn", "cartwheel", "thumbs up", "hiccup", "cough", "burp", "clap",
+      "wave", "shrug", "nod", "blink", "stretch", "jumping jacks", "push-up", "sit-up", "squat", "somersault",
+      "handstand", "the splits", "moonwalk", "dab", "floss dance", "twerk", "hug", "kiss", "fist bump", "salute",
+      "bow", "curtsy", "tiptoe", "skip", "hop", "crawl", "wiggle", "snap", "whistle", "giggle",
+      "snore", "sigh", "pout", "frown", "smile", "eye roll", "facepalm", "pinky promise", "peace sign", "finger guns",
+      "air guitar", "belly flop", "chicken dance"
+    ],
+    "Shapes & Colors": [
+      "circle", "square", "triangle", "rectangle", "oval", "diamond", "star", "heart", "hexagon", "octagon",
+      "pentagon", "cube", "pyramid", "sphere", "cylinder", "cone", "crescent", "arrow", "spiral", "zigzag",
+      "polka dots", "stripes", "plaid", "red", "orange", "yellow", "green", "blue", "purple", "pink",
+      "black", "white", "brown", "gray", "gold", "silver", "turquoise", "neon green", "maroon", "navy blue",
+      "teal", "lavender", "beige", "magenta", "rainbow", "tie-dye", "camouflage"
+    ]
+  },
+  "Toys & Games": {
+    "Toys": [
+      "LEGO", "Barbie", "Hot Wheels", "yo-yo", "Slinky", "Nerf gun", "teddy bear", "Play-Doh", "Etch A Sketch", "Rubik's Cube",
+      "Mr. Potato Head", "Furby", "Tamagotchi", "Beanie Babies", "Polly Pocket", "Bratz", "American Girl doll", "Cabbage Patch Kids", "G.I. Joe", "action figure",
+      "Transformers", "Tonka truck", "remote control car", "jump rope", "hula hoop", "kite", "frisbee", "pogo stick", "scooter", "skateboard",
+      "tricycle", "trampoline", "water gun", "Super Soaker", "bubbles", "sidewalk chalk", "Lite-Brite", "Easy-Bake Oven", "Lincoln Logs", "K'NEX",
+      "Magic 8 Ball", "fidget spinner", "Pokemon cards", "marbles", "jack-in-the-box", "rocking horse", "dollhouse", "L.O.L. Surprise", "Squishmallows", "Silly Putty",
+      "Tickle Me Elmo", "View-Master", "Bop It"
+    ],
+    "Party & Board Games": [
+      "Monopoly", "Uno", "Twister", "Jenga", "Cards Against Humanity", "Scrabble", "Clue", "Sorry!", "Candy Land", "Chutes and Ladders",
+      "Connect Four", "Battleship", "Guess Who?", "Operation", "Trouble", "Mouse Trap", "Hungry Hungry Hippos", "Pictionary", "Catchphrase", "Taboo",
+      "Apples to Apples", "Yahtzee", "The Game of Life", "Risk", "chess", "checkers", "poker", "blackjack", "Go Fish", "War",
+      "Old Maid", "Spoons", "Crazy Eights", "solitaire", "Exploding Kittens", "Codenames", "Catan", "Mafia", "charades", "Heads Up",
+      "Never Have I Ever", "truth or dare", "spin the bottle", "beer pong", "flip cup", "kings cup", "cornhole", "Telephone", "Simon Says", "musical chairs",
+      "hide and seek", "tag", "Red Rover", "Marco Polo", "bingo", "Pin the Tail on the Donkey", "Mad Libs", "Boggle", "dominoes"
+    ]
+  },
+  "After Dark (18+)": {
+    "Bar Orders": [
+      "shot", "double", "on the rocks", "neat", "chaser", "pitcher", "tallboy", "bucket of beers", "open a tab", "close out",
+      "well drink", "top shelf", "vodka soda", "vodka Red Bull", "rum and Coke", "Jack and Coke", "gin and tonic", "whiskey ginger", "tequila soda", "Long Island iced tea",
+      "Dirty Shirley", "Tom Collins", "Moscow mule", "Manhattan", "dirty martini", "frozen margarita", "Jager bomb", "Vegas bomb", "green tea shot", "lemon drop",
+      "kamikaze", "Fireball shot", "pickleback", "boilermaker", "Irish car bomb", "sex on the beach", "buttery nipple", "blow job shot", "AMF", "Blue Moon with an orange",
+      "Michelob Ultra", "Miller Lite", "Coors Light", "Bud Light", "White Claw", "Guinness", "water back", "lime wedge", "salt rim"
+    ],
+    "Late Night": [
+      "last call", "closing time", "drunk text", "drunk dial", "3 a.m.", "Taco Bell run", "drive-thru", "pizza delivery", "gas station snacks", "Waffle House",
+      "hangover", "blackout", "beer goggles", "walk of shame", "Uber home", "designated driver", "bar fight", "karaoke", "dance floor", "nightclub",
+      "bouncer", "cover charge", "VIP section", "bottle service", "strobe lights", "afterparty", "house party", "kegger", "frat party", "pregame",
+      "Irish goodbye", "ghosting", "booty call", "wingman", "couch surfing", "bed spins", "pass out", "puking", "drunk crying", "Gatorade",
+      "Pedialyte", "Advil", "sunrise", "fake ID", "bachelor party", "bachelorette party", "Vegas", "strip club"
+    ],
+    "Spicy": [
+      "condom", "hookup", "one-night stand", "friends with benefits", "booty call", "walk of shame", "make out", "hickey", "lap dance", "strip club",
+      "stripper pole", "handcuffs", "lingerie", "skinny dipping", "body shots", "sexting", "nudes", "slide into the DMs", "dirty talk", "Tinder",
+      "Hinge", "Bumble", "OnlyFans", "Fifty Shades of Grey", "Kama Sutra", "Magic Mike", "Chippendales", "Viagra", "morning-after pill", "vibrator",
+      "porn", "spooning", "Netflix and chill", "quickie", "threesome", "kinky", "safe word", "striptease", "cougar", "sugar daddy",
+      "DTF", "missionary", "doggy style", "69", "morning wood", "blue balls", "love bite", "mile high club", "bow chicka wow wow"
+    ],
+    "Drugs": [
+      "weed", "joint", "blunt", "bong", "edible", "pot brownie", "vape", "Juul", "dab pen", "dispensary",
+      "rolling papers", "grinder", "lighter", "hotbox", "puff puff pass", "420", "stoner", "munchies", "kush", "cocaine",
+      "ecstasy", "molly", "shrooms", "acid", "ketamine", "whippets", "Adderall", "Xanax", "meth", "crack",
+      "heroin", "cigarette", "cigar", "Zyn", "hookah", "nicotine", "dealer", "cartel", "Pablo Escobar", "Cheech and Chong",
+      "Snoop Dogg", "Breaking Bad", "Narcan", "rehab", "D.A.R.E.", "high", "bad trip"
     ]
   },
   "Cara's Family Tree": {
