@@ -586,6 +586,13 @@ html.no-scroll body {
   touch-action: manipulation;
 }
 
+/* Invisible padding so near-misses still hit Settings */
+.game-settings::after {
+  content: "";
+  position: absolute;
+  inset: -14px;
+}
+
 .settings-panel {
   touch-action: pan-y;
 }
@@ -621,6 +628,12 @@ html.no-scroll body {
 
   .game-word {
     font-size: clamp(2rem, 7vw, 5rem);
+  }
+
+  /* iOS Safari swallows taps near the top edge in landscape, so pin Settings bottom-left */
+  .game-settings {
+    top: auto;
+    bottom: max(16px, env(safe-area-inset-bottom, 0px));
   }
 
   .hint {
