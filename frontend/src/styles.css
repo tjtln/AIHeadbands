@@ -41,14 +41,6 @@ button {
   background: radial-gradient(circle at top, rgba(59,130,246,0.2), transparent 40%);
 }
 
-.top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
 .settings-button {
   appearance: none;
   border: 1px solid rgba(255,255,255,0.2);
@@ -82,24 +74,6 @@ button {
   line-height: 1;
 }
 
-.board-area {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  padding: 12px 0 6px;
-}
-
-.topic-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .topic-pill, .progress-pill {
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.14);
@@ -109,61 +83,6 @@ button {
   letter-spacing: 0.03em;
 }
 
-.word-card {
-  width: min(90vw, 920px);
-  min-height: min(58vh, 560px);
-  border-radius: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(180deg, rgba(148,163,184,0.12), rgba(15,23,42,0.22));
-  border: 2px solid rgba(255,255,255,0.14);
-  box-shadow: 0 25px 60px rgba(15,23,42,0.45);
-  padding: 24px;
-  font-size: clamp(2.8rem, 7vw, 8rem);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-weight: 800;
-  word-break: break-word;
-}
-
-.word-card.tappable {
-  appearance: none;
-  color: #fff;
-  cursor: pointer;
-  transition: transform 0.08s ease, background 0.15s ease;
-}
-
-.word-card.tappable:active {
-  transform: scale(0.98);
-  background: linear-gradient(180deg, rgba(34,197,94,0.25), rgba(15,23,42,0.3));
-}
-
-.word-card.tappable:disabled {
-  cursor: default;
-  opacity: 0.6;
-}
-
-.word-card.tappable.correct {
-  border-color: #4ade80;
-  box-shadow: 0 0 0 5px rgba(74,222,128,0.4), 0 25px 60px rgba(15,23,42,0.45);
-  opacity: 1;
-}
-
-.word-card.tappable.skipped {
-  border-color: #f87171;
-  box-shadow: 0 0 0 5px rgba(248,113,113,0.4), 0 25px 60px rgba(15,23,42,0.45);
-  opacity: 1;
-}
-
-.word-card.loading,
-.word-card.empty {
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  letter-spacing: 0.04em;
-  text-transform: none;
-}
-
 .hint {
   opacity: 0.6;
   font-size: 0.85rem;
@@ -171,14 +90,6 @@ button {
   text-align: center;
 }
 
-.controls {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.controls button,
 .settings-actions button,
 .quick-topics button {
   border: 1px solid rgba(255,255,255,0.18);
@@ -189,20 +100,9 @@ button {
   font-weight: 700;
 }
 
-.controls .primary,
 .settings-actions .primary {
   background: linear-gradient(135deg, #2563eb, #7c3aed);
   border: none;
-}
-
-.controls .skip {
-  background: rgba(239,68,68,0.18);
-  border: 1px solid rgba(239,68,68,0.35);
-}
-
-.controls button:disabled {
-  opacity: 0.45;
-  cursor: not-allowed;
 }
 
 .settings-panel {
@@ -591,13 +491,109 @@ button {
   color: #fecaca;
 }
 
+/* ---- In-game: the whole screen is the tap target ---- */
+
+html.no-scroll,
+html.no-scroll body {
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+html.no-scroll body {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+}
+
+.game-shell {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  background: radial-gradient(circle at top, rgba(59,130,246,0.2), transparent 45%);
+}
+
+.tap-surface {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding:
+    max(16px, env(safe-area-inset-top, 0px))
+    max(20px, env(safe-area-inset-right, 0px))
+    max(16px, env(safe-area-inset-bottom, 0px))
+    max(20px, env(safe-area-inset-left, 0px));
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.tap-surface.correct {
+  background-color: rgba(34,197,94,0.35);
+}
+
+.tap-surface.skipped {
+  background-color: rgba(239,68,68,0.35);
+}
+
+.game-hud {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.game-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.game-word {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: clamp(2.8rem, 10vw, 8rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 800;
+  word-break: break-word;
+}
+
+.game-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.game-footer .hint {
+  margin: 0;
+}
+
+.game-settings {
+  position: absolute;
+  top: max(16px, env(safe-area-inset-top, 0px));
+  left: max(20px, env(safe-area-inset-left, 0px));
+  z-index: 3;
+  touch-action: manipulation;
+}
+
+.settings-panel {
+  touch-action: pan-y;
+}
+
+
 @media (max-width: 720px) {
   .app-shell {
     padding: 20px 16px 28px;
-  }
-
-  .top-bar {
-    align-items: flex-start;
   }
 
   .settings-panel {
@@ -607,19 +603,11 @@ button {
     right: 16px;
     width: auto;
   }
-
-  .word-card {
-    min-height: 46vh;
-  }
 }
 
 @media (orientation: landscape) and (max-height: 520px) {
   .app-shell {
     padding: 12px 20px 16px;
-  }
-
-  .top-bar {
-    align-items: center;
   }
 
   .timer-wrap {
@@ -631,15 +619,8 @@ button {
     font-size: clamp(1.3rem, 4vw, 1.8rem);
   }
 
-  .board-area {
-    gap: 10px;
-    padding: 4px 0;
-  }
-
-  .word-card {
-    min-height: 40vh;
-    padding: 16px;
-    font-size: clamp(2rem, 6vw, 4.5rem);
+  .game-word {
+    font-size: clamp(2rem, 7vw, 5rem);
   }
 
   .hint {

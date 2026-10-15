@@ -12,7 +12,7 @@ import {
 type CalibrationStep = 'neutral' | 'down' | 'up';
 
 const DEFAULT_DURATION = 180;
-const CLICK_DELAY_MS = 220;
+const DOUBLE_TAP_MS = 260;
 const FEEDBACK_DELAY_MS = 280;
 const COUNTDOWN_SECONDS = 3;
 const CATEGORY_MAP: Record<string, Record<string, string[]>> = topicsData;
@@ -114,6 +114,29 @@ function App() {
     return () => window.clearTimeout(timer);
   }, [phase, countdown]);
 
+  // Lock the page in place during a round so a tap that drifts can't turn into a scroll.
+  useEffect(() => {
+    if (phase !== 'playing' && phase !== 'countdown') {
+      return;
+    }
+
+    document.documentElement.classList.add('no-scroll');
+
+    function blockTouchMove(event: TouchEvent) {
+      const target = event.target as Element | null;
+      if (target?.closest('.settings-panel, .calibration-overlay')) {
+        return;
+      }
+      event.preventDefault();
+    }
+
+    document.addEventListener('touchmove', blockTouchMove, { passive: false });
+    return () => {
+      document.documentElement.classList.remove('no-scroll');
+      document.removeEventListener('touchmove', blockTouchMove);
+    };
+  }, [phase]);
+
   useEffect(() => {
     if (phase !== 'playing' || settingsOpen) {
       return;
@@ -198,22 +221,23 @@ function App() {
     }, FEEDBACK_DELAY_MS);
   }
 
-  function handleWordClick() {
+  // One tap = correct, a second tap within DOUBLE_TAP_MS = skip.
+  function handleScreenTap() {
+    if (settingsOpen || calibrating) {
+      return;
+    }
+
     if (clickTimerRef.current) {
       window.clearTimeout(clickTimerRef.current);
+      clickTimerRef.current = null;
+      markCurrent('skipped');
+      return;
     }
+
     clickTimerRef.current = window.setTimeout(() => {
       clickTimerRef.current = null;
       markCurrent('correct');
-    }, CLICK_DELAY_MS);
-  }
-
-  function handleWordDoubleClick() {
-    if (clickTimerRef.current) {
-      window.clearTimeout(clickTimerRef.current);
-      clickTimerRef.current = null;
-    }
-    markCurrent('skipped');
+    }, DOUBLE_TAP_MS);
   }
 
   async function toggleTilt() {
@@ -477,52 +501,44 @@ function App() {
   }
 
   return (
-    <div className="app-shell">
-      <header className="top-bar">
-        <button className="settings-button" onClick={() => setSettingsOpen((open) => !open)}>
-          Settings
-        </button>
-
-        <div className="timer-wrap">
-          <span className="timer-label">Timer</span>
-          <strong>{formatTime(timeLeft)}</strong>
-        </div>
-      </header>
-
-      <main className="board-area">
-        <div className="topic-row">
-          <span className="topic-pill">{category} › {topic}</span>
-          <span className="progress-pill">Score: {score}</span>
+    <div className="game-shell">
+      <main
+        className={`tap-surface${feedback ? ` ${feedback}` : ''}`}
+        onPointerUp={handleScreenTap}
+        aria-label="Tap for correct, double-tap to skip"
+      >
+        <div className="game-hud">
+          <div className="timer-wrap">
+            <span className="timer-label">Timer</span>
+            <strong>{formatTime(timeLeft)}</strong>
+          </div>
         </div>
 
-        <button
-          type="button"
-          className={`word-card tappable${feedback ? ` ${feedback}` : ''}`}
-          onClick={handleWordClick}
-          onDoubleClick={handleWordDoubleClick}
-          disabled={!currentWord || !!feedback}
-        >
-          {currentWord || 'Loading...'}
-        </button>
+        <div className="game-word">{currentWord || 'Loading...'}</div>
 
-        <div className="controls">
-          <button className="skip" onClick={() => markCurrent('skipped')} disabled={!currentWord || !!feedback}>
-            Skip
-          </button>
-          <button className="primary" onClick={() => markCurrent('correct')} disabled={!currentWord || !!feedback}>
-            Correct
-          </button>
-        </div>
-        {tiltEnabled ? (
+        <div className="game-footer">
+          <div className="game-pills">
+            <span className="topic-pill">{topic}</span>
+            <span className="progress-pill">Score: {score}</span>
+          </div>
           <p className="hint">
-            {tiltStatus === 'calibrating'
-              ? 'Calibrating tilt — hold the phone steady against your forehead...'
-              : 'Tilt down for correct · Tilt up to skip'}
+            {tiltEnabled
+              ? tiltStatus === 'calibrating'
+                ? 'Calibrating tilt — hold the phone steady against your forehead...'
+                : 'Tilt down for correct · Tilt up to skip · or tap / double-tap'
+              : 'Tap anywhere for correct · Double-tap to skip'}
           </p>
-        ) : (
-          <p className="hint">Tap the word (or press Space) for correct · Double-tap, Skip button, or ↓ to pass</p>
-        )}
+        </div>
       </main>
+
+      <button
+        type="button"
+        className="settings-button game-settings"
+        onPointerUp={(event) => event.stopPropagation()}
+        onClick={() => setSettingsOpen((open) => !open)}
+      >
+        Settings
+      </button>
 
       {settingsOpen ? (
         <aside className="settings-panel">
