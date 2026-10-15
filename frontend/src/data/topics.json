@@ -5,7 +5,10 @@
       "solid", "beaker", "hydrogen", "oxygen", "carbon", "nitrogen", "helium", "sodium", "calcium", "iron",
       "gold", "silver", "copper", "mercury", "lead", "uranium", "neon", "salt", "water", "crystal",
       "explosion", "rust", "bubbles", "lab coat", "goggles", "test tube", "chemical reaction", "radioactive", "evaporation", "boiling",
-      "freezing", "melting"
+      "freezing", "melting", "H2O", "carbon dioxide", "dry ice", "baking soda", "vinegar", "volcano experiment", "bleach", "soap",
+      "plastic", "steam", "ice", "fire", "smoke", "glow stick", "fireworks", "poison", "toxic", "diamond",
+      "platinum", "aluminum foil", "rubber", "glass", "slime", "chlorine", "fluoride", "caffeine", "sugar", "Bunsen burner",
+      "mad scientist", "Breaking Bad", "Walter White", "formula"
     ],
     "Physics": [
       "gravity", "force", "speed", "friction", "energy", "magnet", "electricity", "light", "sound", "wave",
@@ -69,13 +72,6 @@
       "Arnold Schwarzenegger", "Sylvester Stallone", "Harrison Ford", "Emma Watson", "Matt Damon", "Ryan Gosling", "Timothee Chalamet", "Owen Wilson", "Steve Carell", "Melissa McCarthy",
       "Jason Momoa", "Vin Diesel", "Eddie Murphy", "Angelina Jolie", "Anne Hathaway", "Jonah Hill", "Seth Rogen", "Sydney Sweeney", "Pedro Pascal", "Jennifer Lopez"
     ],
-    "Disney": [
-      "Mickey Mouse", "Minnie Mouse", "Donald Duck", "Goofy", "Pluto", "Cinderella", "Snow White", "Ariel", "Belle", "Jasmine",
-      "Aladdin", "Mulan", "Pocahontas", "Moana", "Elsa", "Anna", "Olaf", "Rapunzel", "Simba", "Nala",
-      "Mufasa", "Scar", "Timon", "Pumbaa", "Stitch", "Winnie the Pooh", "Tigger", "Eeyore", "Peter Pan", "Tinker Bell",
-      "Captain Hook", "Dumbo", "Bambi", "Pinocchio", "Genie", "Ursula", "Maleficent", "Cruella de Vil", "Buzz Lightyear", "Woody",
-      "Lightning McQueen", "Nemo", "Dory", "Wall-E", "Mike Wazowski", "Sully", "Encanto", "Mary Poppins", "Disneyland", "Cinderella's Castle"
-    ],
     "TV Series": [
       "Friends", "The Office", "Seinfeld", "Breaking Bad", "Game of Thrones", "Stranger Things", "The Simpsons", "Family Guy", "Grey's Anatomy", "Modern Family",
       "How I Met Your Mother", "The Big Bang Theory", "Parks and Recreation", "Brooklyn Nine-Nine", "The Walking Dead", "Squid Game", "Wednesday", "Euphoria", "Survivor", "American Idol",
@@ -83,12 +79,24 @@
       "Ted Lasso", "Outer Banks", "The Last of Us", "The Bear", "Bluey", "Jeopardy", "Wheel of Fortune", "Shark Tank", "Keeping Up with the Kardashians", "Two and a Half Men",
       "That '70s Show", "Schitt's Creek", "New Girl", "The Fresh Prince of Bel-Air", "Lost", "Bridgerton", "Dexter", "Ozark", "Suits", "Vanderpump Rules"
     ],
-    "Cartoons": [
+    "Cartoons & Disney": [
       "SpongeBob", "Patrick Star", "Scooby-Doo", "Shaggy", "Bugs Bunny", "Daffy Duck", "Tweety", "Road Runner", "Wile E. Coyote", "Tom and Jerry",
       "Homer Simpson", "Bart Simpson", "Peter Griffin", "Stewie", "Fred Flintstone", "Popeye", "Garfield", "Snoopy", "Charlie Brown", "Dora the Explorer",
       "Peppa Pig", "Bluey", "Pikachu", "Phineas and Ferb", "Rugrats", "Hey Arnold", "Arthur", "Spider-Man", "Teenage Mutant Ninja Turtles", "Powerpuff Girls",
       "Dexter's Laboratory", "Johnny Bravo", "Courage the Cowardly Dog", "Ben 10", "Avatar", "Rick and Morty", "South Park", "Bob's Burgers", "Jimmy Neutron", "Fairly OddParents",
-      "Pink Panther", "Woody Woodpecker", "Winnie the Pooh", "Paw Patrol"
+      "Pink Panther", "Woody Woodpecker", "Winnie the Pooh", "Paw Patrol", "Mickey Mouse", "Minnie Mouse", "Donald Duck", "Goofy", "Pluto", "Cinderella",
+      "Snow White", "Ariel", "Belle", "Jasmine", "Aladdin", "Mulan", "Pocahontas", "Moana", "Elsa", "Anna",
+      "Olaf", "Rapunzel", "Simba", "Nala", "Mufasa", "Scar", "Timon", "Pumbaa", "Stitch", "Tigger",
+      "Eeyore", "Peter Pan", "Tinker Bell", "Captain Hook", "Dumbo", "Bambi", "Pinocchio", "Genie", "Ursula", "Maleficent",
+      "Cruella de Vil", "Buzz Lightyear", "Woody", "Lightning McQueen", "Nemo", "Dory", "Wall-E", "Mike Wazowski", "Sully", "Encanto",
+      "Mary Poppins", "Disneyland", "Cinderella's Castle"
+    ],
+    "YouTubers & Streamers": [
+      "MrBeast", "PewDiePie", "Ninja", "Pokimane", "xQc", "Dr Disrespect", "Markiplier", "Jacksepticeye", "Kai Cenat", "IShowSpeed",
+      "Logan Paul", "Jake Paul", "KSI", "Dude Perfect", "Emma Chamberlain", "Charli D'Amelio", "Addison Rae", "David Dobrik", "Jenna Marbles", "Smosh",
+      "James Charles", "DanTDM", "Dream", "Technoblade", "Valkyrae", "Ludwig", "Sidemen", "Mark Rober", "Rhett and Link", "Casey Neistat",
+      "Zach King", "JoJo Siwa", "Ryan's World", "Cocomelon", "Khaby Lame", "Bella Poarch", "Twitch", "YouTube", "TikTok", "Unbox Therapy",
+      "Alix Earle", "Druski"
     ]
   },
   "Geography": {
@@ -181,7 +189,11 @@
       "apple", "banana", "orange", "grape", "strawberry", "blueberry", "watermelon", "pineapple", "mango", "peach",
       "pear", "cherry", "lemon", "lime", "coconut", "kiwi", "avocado", "tomato", "potato", "carrot",
       "broccoli", "corn", "lettuce", "cucumber", "onion", "garlic", "pumpkin", "celery", "spinach", "peas",
-      "green beans", "mushroom", "pepper", "jalapeno", "pickle", "cabbage", "cauliflower", "sweet potato", "zucchini", "raspberry"
+      "green beans", "mushroom", "pepper", "jalapeno", "pickle", "cabbage", "cauliflower", "sweet potato", "zucchini", "raspberry",
+      "plum", "apricot", "grapefruit", "cantaloupe", "honeydew", "pomegranate", "papaya", "fig", "cranberry", "blackberry",
+      "tangerine", "nectarine", "dragon fruit", "passion fruit", "lychee", "guava", "plantain", "olive", "radish", "beet",
+      "asparagus", "kale", "Brussels sprouts", "eggplant", "artichoke", "squash", "okra", "bell pepper", "green onion", "ginger",
+      "bok choy", "rhubarb"
     ],
     "Desserts": [
       "cake", "pie", "cookie", "brownie", "cupcake", "ice cream", "donut", "cheesecake", "pudding", "Jell-O",
@@ -213,33 +225,28 @@
     ]
   },
   "Music": {
-    "Pop Artists": [
+    "Pop & Rock": [
       "Taylor Swift", "Beyonce", "Rihanna", "Lady Gaga", "Ariana Grande", "Justin Bieber", "Billie Eilish", "Ed Sheeran", "Harry Styles", "Bruno Mars",
       "Katy Perry", "Britney Spears", "Madonna", "Michael Jackson", "Adele", "Dua Lipa", "Olivia Rodrigo", "Selena Gomez", "Miley Cyrus", "Shakira",
-      "Justin Timberlake", "Sabrina Carpenter", "Chappell Roan", "The Weeknd", "Shawn Mendes", "Jonas Brothers", "One Direction", "Backstreet Boys", "NSYNC", "Spice Girls",
-      "Christina Aguilera", "Pink", "Kelly Clarkson", "Lizzo", "Jennifer Lopez", "Elton John", "Cher", "Whitney Houston", "Mariah Carey", "Charli XCX"
+      "Justin Timberlake", "Sabrina Carpenter", "The Weeknd", "Shawn Mendes", "Jonas Brothers", "One Direction", "Backstreet Boys", "NSYNC", "Spice Girls", "Christina Aguilera",
+      "Pink", "Kelly Clarkson", "Jennifer Lopez", "Elton John", "Cher", "Whitney Houston", "Mariah Carey", "The Beatles", "The Rolling Stones", "Queen",
+      "AC/DC", "Led Zeppelin", "Nirvana", "Metallica", "Aerosmith", "Guns N' Roses", "Bon Jovi", "Kiss", "Foo Fighters", "Green Day",
+      "Red Hot Chili Peppers", "Linkin Park", "Coldplay", "Imagine Dragons", "Fall Out Boy", "Journey", "Fleetwood Mac", "The Eagles", "U2", "Maroon 5",
+      "Nickelback", "The Beach Boys", "Twenty One Pilots", "Shake It Off", "Love Story", "Bohemian Rhapsody", "Thriller", "Billie Jean", "Yellow Submarine", "Sweet Caroline",
+      "Don't Stop Believin'", "Livin' on a Prayer", "Single Ladies", "Baby", "Call Me Maybe", "Uptown Funk", "Gangnam Style", "Rolling in the Deep", "Shape of You", "Bad Guy",
+      "Drivers License", "Espresso", "Despacito", "Macarena", "YMCA", "Cha Cha Slide", "Cotton Eye Joe", "Mr. Brightside", "Wonderwall", "We Will Rock You",
+      "Hips Don't Lie", "Toxic", "Oops!... I Did It Again", "...Baby One More Time", "I Will Always Love You", "Party in the U.S.A.", "Let It Go", "Dancing Queen"
     ],
-    "Rock Bands": [
-      "The Beatles", "The Rolling Stones", "Queen", "AC/DC", "Led Zeppelin", "Nirvana", "Metallica", "Aerosmith", "Guns N' Roses", "Bon Jovi",
-      "Kiss", "Pink Floyd", "Foo Fighters", "Green Day", "Red Hot Chili Peppers", "Linkin Park", "Coldplay", "Imagine Dragons", "Fall Out Boy", "Paramore",
-      "Panic! at the Disco", "My Chemical Romance", "Blink-182", "Pearl Jam", "The Killers", "Journey", "Fleetwood Mac", "The Eagles", "U2", "Maroon 5",
-      "Nickelback", "Arctic Monkeys", "Van Halen", "The Who", "The Doors", "Black Sabbath", "The Beach Boys", "Def Leppard", "Motley Crue", "Lynyrd Skynyrd",
-      "Creedence Clearwater Revival", "The Police", "Weezer", "Oasis", "Kings of Leon", "Twenty One Pilots", "Evanescence", "Matchbox Twenty", "Heart"
-    ],
-    "Hip-Hop & Rap Artists": [
+    "Hip-Hop & Rap": [
       "Drake", "Eminem", "Kanye West", "Jay-Z", "Kendrick Lamar", "Snoop Dogg", "Nicki Minaj", "Cardi B", "Lil Wayne", "Travis Scott",
       "Post Malone", "50 Cent", "Tupac", "Biggie", "Dr. Dre", "Ice Cube", "Missy Elliott", "Megan Thee Stallion", "Doja Cat", "Lil Nas X",
       "Pitbull", "Flo Rida", "Kid Cudi", "Mac Miller", "Chance the Rapper", "Lizzo", "Pharrell", "Ludacris", "Nelly", "Usher",
       "Lil Jon", "Future", "21 Savage", "Childish Gambino", "Macklemore", "Vanilla Ice", "J. Cole", "Lil Uzi Vert", "Lil Baby", "A$AP Rocky",
       "Tyler, the Creator", "Run-DMC", "Beastie Boys", "Wu-Tang Clan", "OutKast", "Queen Latifah", "LL Cool J", "Juice WRLD", "Ice Spice", "T-Pain",
-      "Wiz Khalifa", "Soulja Boy"
-    ],
-    "Song Titles": [
-      "Happy Birthday", "Shake It Off", "Love Story", "Bohemian Rhapsody", "Thriller", "Billie Jean", "Hey Jude", "Yellow Submarine", "Sweet Caroline", "Don't Stop Believin'",
-      "Livin' on a Prayer", "Single Ladies", "Baby", "Call Me Maybe", "Uptown Funk", "Gangnam Style", "Old Town Road", "Rolling in the Deep", "Hotline Bling", "Shape of You",
-      "Bad Guy", "Drivers License", "Espresso", "Despacito", "Macarena", "YMCA", "Cha Cha Slide", "Cotton Eye Joe", "Mr. Brightside", "Wonderwall",
-      "Smells Like Teen Spirit", "We Will Rock You", "Hips Don't Lie", "Toxic", "Oops!... I Did It Again", "...Baby One More Time", "I Will Always Love You", "Party in the U.S.A.", "Jingle Bells", "Let It Go",
-      "Friends in Low Places", "Hey Ya!", "Africa", "Dancing Queen"
+      "Wiz Khalifa", "Soulja Boy", "Old Town Road", "Hotline Bling", "Hey Ya!", "Lose Yourself", "The Real Slim Shady", "Without Me", "In Da Club", "Gold Digger",
+      "Stronger", "Sicko Mode", "God's Plan", "HUMBLE.", "Not Like Us", "Super Bass", "Bodak Yellow", "WAP", "Low", "Yeah!",
+      "Hot in Herre", "Gin and Juice", "California Love", "Gangsta's Paradise", "Ice Ice Baby", "Baby Got Back", "Rapper's Delight", "Crank That", "Thrift Shop", "Lollipop",
+      "Empire State of Mind", "Black and Yellow", "Get Low", "Sunflower", "Rockstar"
     ],
     "Musical Instruments": [
       "guitar", "piano", "drums", "violin", "trumpet", "saxophone", "flute", "clarinet", "trombone", "tuba",
@@ -250,65 +257,31 @@
     ]
   },
   "Comics & Superheroes": {
-    "Marvel Characters": [
+    "Superheroes & Villains": [
       "Spider-Man", "Iron Man", "Captain America", "Thor", "Hulk", "Black Widow", "Hawkeye", "Black Panther", "Doctor Strange", "Ant-Man",
       "Captain Marvel", "Wolverine", "Deadpool", "Groot", "Rocket Raccoon", "Star-Lord", "Gamora", "Thanos", "Loki", "Venom",
-      "Scarlet Witch", "Vision", "Nick Fury", "Falcon", "Professor X", "Magneto", "Storm", "Daredevil", "Ghost Rider", "Silver Surfer",
-      "Cyclops", "Jean Grey", "Rogue", "Mystique", "Beast", "Nightcrawler", "She-Hulk", "Ms. Marvel", "Moon Knight", "Shang-Chi",
-      "Kingpin", "Bucky", "War Machine", "Pepper Potts", "Stan Lee", "Wakanda", "Infinity Gauntlet", "vibranium"
-    ],
-    "DC Characters": [
-      "Batman", "Superman", "Wonder Woman", "The Flash", "Aquaman", "Green Lantern", "Robin", "Batgirl", "Supergirl", "Joker",
-      "Harley Quinn", "Lex Luthor", "Catwoman", "Penguin", "Riddler", "Two-Face", "Poison Ivy", "Bane", "Alfred", "Lois Lane",
-      "Commissioner Gordon", "Cyborg", "Shazam", "Darkseid", "Nightwing", "Martian Manhunter", "Green Arrow", "Starfire", "Raven", "Beast Boy",
-      "Batmobile", "Gotham City", "Metropolis", "Batcave", "Kryptonite", "Krypton", "Bat-Signal", "Black Adam", "Deathstroke", "Swamp Thing"
-    ],
-    "Supervillains": [
-      "Joker", "Thanos", "Darth Vader", "Lex Luthor", "Magneto", "Loki", "Green Goblin", "Doctor Octopus", "Venom", "Harley Quinn",
-      "Catwoman", "Penguin", "Riddler", "Two-Face", "Bane", "Poison Ivy", "Ultron", "Red Skull", "Doctor Doom", "Mr. Freeze",
-      "Scarecrow", "Sandman", "Voldemort", "Kingpin", "Mysterio", "Vulture", "Electro", "Killmonger", "Hela", "General Zod",
-      "Brainiac", "Black Adam", "Kang", "Mystique", "Juggernaut", "Carnage", "Megatron", "Plankton", "Dr. Evil", "Gru",
-      "Mojo Jojo", "Bowser"
-    ],
-    "Superhero Movies & Shows": [
-      "Iron Man", "The Avengers", "Black Panther", "The Dark Knight", "Wonder Woman", "Deadpool", "Guardians of the Galaxy", "Thor", "Captain America", "Ant-Man",
-      "Doctor Strange", "Aquaman", "Man of Steel", "Justice League", "Suicide Squad", "The Batman", "Joker", "Venom", "X-Men", "Logan",
-      "The Incredibles", "Big Hero 6", "Megamind", "Teen Titans", "The Boys", "WandaVision", "Smallville", "The Flash", "Shazam", "Fantastic Four",
-      "Spider-Verse", "Spider-Man: No Way Home", "Black Widow", "Captain Marvel", "Watchmen", "Sky High", "Hancock", "Batman Begins", "Daredevil", "Loki",
-      "Teenage Mutant Ninja Turtles"
+      "Scarlet Witch", "Vision", "Nick Fury", "Falcon", "Professor X", "Magneto", "Storm", "Daredevil", "Ghost Rider", "Cyclops",
+      "Jean Grey", "Rogue", "Mystique", "She-Hulk", "Stan Lee", "Wakanda", "Infinity Gauntlet", "Batman", "Superman", "Wonder Woman",
+      "The Flash", "Aquaman", "Green Lantern", "Robin", "Batgirl", "Supergirl", "Joker", "Harley Quinn", "Lex Luthor", "Catwoman",
+      "Penguin", "Riddler", "Two-Face", "Poison Ivy", "Bane", "Alfred", "Lois Lane", "Shazam", "Nightwing", "Batmobile",
+      "Gotham City", "Metropolis", "Batcave", "Kryptonite", "Krypton", "Bat-Signal", "Darth Vader", "Green Goblin", "Doctor Octopus", "Ultron",
+      "Doctor Doom", "Mr. Freeze", "Voldemort", "Megatron", "Plankton", "Dr. Evil", "Gru", "Mojo Jojo", "Bowser", "The Avengers",
+      "The Dark Knight", "Guardians of the Galaxy", "Justice League", "Suicide Squad", "The Batman", "X-Men", "The Incredibles", "Big Hero 6", "Megamind", "Teen Titans",
+      "WandaVision", "Fantastic Four", "Spider-Man: No Way Home", "Teenage Mutant Ninja Turtles"
     ]
   },
   "Video Games": {
-    "Video Game Characters": [
-      "Mario", "Luigi", "Princess Peach", "Bowser", "Yoshi", "Toad", "Donkey Kong", "Wario", "Link", "Zelda",
-      "Ganon", "Pikachu", "Kirby", "Sonic", "Tails", "Pac-Man", "Master Chief", "Lara Croft", "Steve from Minecraft", "Creeper",
-      "Crash Bandicoot", "Spyro", "Kratos", "Samus", "Fox McCloud", "Mega Man", "Frogger", "Ash Ketchum", "Jigglypuff", "Charizard",
-      "Diddy Kong", "Princess Daisy", "Waluigi", "Knuckles", "Dr. Eggman", "Ms. Pac-Man", "Ryu", "Chun-Li", "Scorpion", "Sub-Zero",
-      "Ellie", "Nathan Drake", "Tom Nook", "Isabelle", "Mewtwo", "Eevee", "Charmander", "Squirtle", "Bulbasaur", "Enderman",
-      "Captain Falcon", "Freddy Fazbear"
-    ],
-    "Video Game Titles": [
+    "Video Games": [
       "Minecraft", "Fortnite", "Tetris", "Pac-Man", "Super Mario Bros.", "Mario Kart", "Call of Duty", "Grand Theft Auto", "Halo", "The Sims",
       "Pokemon", "The Legend of Zelda", "Animal Crossing", "Roblox", "Among Us", "Candy Crush", "Angry Birds", "Wii Sports", "Guitar Hero", "Just Dance",
-      "Madden", "FIFA", "Rocket League", "Overwatch", "World of Warcraft", "League of Legends", "Sonic the Hedgehog", "Street Fighter", "Mortal Kombat", "Super Smash Bros.",
-      "Frogger", "Space Invaders", "Donkey Kong", "Flappy Bird", "Fall Guys", "Red Dead Redemption", "Pong", "Galaga", "Skyrim", "Elden Ring",
-      "Fallout", "Portal", "Apex Legends", "Valorant", "Counter-Strike", "The Last of Us", "God of War", "Five Nights at Freddy's", "Stardew Valley", "Clash of Clans",
-      "Pokemon Go", "Subway Surfers", "Temple Run", "Fruit Ninja", "Wordle", "Solitaire"
-    ],
-    "Nintendo": [
-      "Mario", "Luigi", "Princess Peach", "Bowser", "Yoshi", "Donkey Kong", "Link", "Zelda", "Kirby", "Pikachu",
-      "Wario", "Toad", "Mario Kart", "Super Smash Bros.", "Animal Crossing", "Pokemon", "Wii", "Wii Sports", "Nintendo Switch", "Game Boy",
-      "Nintendo 64", "Nintendo DS", "GameCube", "Mii", "Mushroom", "Star", "Blue Shell", "Warp Pipe", "Mario Party", "Splatoon",
-      "Metroid", "Star Fox", "Pikmin", "Joy-Con", "Wii U", "NES", "Super Nintendo", "Duck Hunt", "Wii Fit", "Nintendogs",
-      "Fire Flower", "banana peel", "Rainbow Road", "Princess Daisy", "Waluigi", "Diddy Kong", "Tom Nook", "Triforce", "Master Sword", "Poke Ball",
-      "1-Up"
-    ],
-    "YouTubers & Streamers": [
-      "MrBeast", "PewDiePie", "Ninja", "Pokimane", "xQc", "Dr Disrespect", "Markiplier", "Jacksepticeye", "Kai Cenat", "IShowSpeed",
-      "Logan Paul", "Jake Paul", "KSI", "Dude Perfect", "Emma Chamberlain", "Charli D'Amelio", "Addison Rae", "David Dobrik", "Jenna Marbles", "Smosh",
-      "James Charles", "DanTDM", "Dream", "Technoblade", "Valkyrae", "Ludwig", "Sidemen", "Mark Rober", "Rhett and Link", "Casey Neistat",
-      "Zach King", "JoJo Siwa", "Ryan's World", "Cocomelon", "Khaby Lame", "Bella Poarch", "Twitch", "YouTube", "TikTok", "Unbox Therapy",
-      "Alix Earle", "Druski"
+      "Madden", "FIFA", "Rocket League", "League of Legends", "Sonic the Hedgehog", "Street Fighter", "Mortal Kombat", "Super Smash Bros.", "Frogger", "Space Invaders",
+      "Donkey Kong", "Flappy Bird", "Fall Guys", "Red Dead Redemption", "Pong", "The Last of Us", "God of War", "Five Nights at Freddy's", "Clash of Clans", "Pokemon Go",
+      "Subway Surfers", "Temple Run", "Fruit Ninja", "Wordle", "Solitaire", "Mario", "Luigi", "Princess Peach", "Bowser", "Yoshi",
+      "Toad", "Wario", "Link", "Zelda", "Pikachu", "Kirby", "Sonic", "Tails", "Master Chief", "Lara Croft",
+      "Steve from Minecraft", "Creeper", "Crash Bandicoot", "Spyro", "Kratos", "Mega Man", "Ash Ketchum", "Jigglypuff", "Charizard", "Diddy Kong",
+      "Waluigi", "Knuckles", "Dr. Eggman", "Scorpion", "Sub-Zero", "Tom Nook", "Eevee", "Charmander", "Squirtle", "Bulbasaur",
+      "Enderman", "Freddy Fazbear", "Wii", "Nintendo Switch", "Game Boy", "Nintendo 64", "Nintendo DS", "GameCube", "Mushroom", "Star",
+      "Blue Shell", "Mario Party", "Super Nintendo", "Duck Hunt", "banana peel", "Rainbow Road", "Poke Ball", "1-Up"
     ]
   },
   "History": {
@@ -348,19 +321,15 @@
     ]
   },
   "Literature & Books": {
-    "Classic Novels": [
+    "Books & Authors": [
       "Romeo and Juliet", "Hamlet", "The Great Gatsby", "To Kill a Mockingbird", "Pride and Prejudice", "1984", "The Catcher in the Rye", "Of Mice and Men", "Frankenstein", "Dracula",
       "Moby Dick", "The Odyssey", "Little Women", "The Hobbit", "The Lord of the Rings", "Alice in Wonderland", "The Wizard of Oz", "Charlotte's Web", "Peter Pan", "Treasure Island",
       "The Lion, the Witch and the Wardrobe", "Animal Farm", "The Scarlet Letter", "Huckleberry Finn", "Tom Sawyer", "A Christmas Carol", "Lord of the Flies", "The Outsiders", "Fahrenheit 451", "Where the Red Fern Grows",
       "Jane Eyre", "Wuthering Heights", "Great Expectations", "The Grapes of Wrath", "Brave New World", "The Diary of Anne Frank", "Charlie and the Chocolate Factory", "Matilda", "The Giver", "Holes",
-      "Bridge to Terabithia", "Black Beauty", "The Jungle Book", "Robinson Crusoe", "Gulliver's Travels", "Les Miserables", "Macbeth", "The Little Prince"
-    ],
-    "Authors": [
-      "William Shakespeare", "J.K. Rowling", "Stephen King", "Dr. Seuss", "Mark Twain", "Charles Dickens", "Jane Austen", "Edgar Allan Poe", "Ernest Hemingway", "J.R.R. Tolkien",
-      "C.S. Lewis", "George Orwell", "F. Scott Fitzgerald", "Roald Dahl", "Rick Riordan", "Suzanne Collins", "John Green", "Nicholas Sparks", "Colleen Hoover", "James Patterson",
-      "Agatha Christie", "Maya Angelou", "Shel Silverstein", "Judy Blume", "George R.R. Martin", "Dan Brown", "Beverly Cleary", "Eric Carle", "Maurice Sendak", "Jeff Kinney",
-      "R.L. Stine", "Lemony Snicket", "Toni Morrison", "Harper Lee", "John Steinbeck", "Homer", "Lewis Carroll", "Hans Christian Andersen", "Brothers Grimm", "Louisa May Alcott",
-      "Emily Dickinson", "Robert Frost", "Sarah J. Maas", "Michael Crichton", "Stephenie Meyer", "Oscar Wilde"
+      "Bridge to Terabithia", "Black Beauty", "The Jungle Book", "Robinson Crusoe", "Gulliver's Travels", "Les Miserables", "Macbeth", "The Little Prince", "William Shakespeare", "J.K. Rowling",
+      "Stephen King", "Dr. Seuss", "Mark Twain", "Charles Dickens", "Edgar Allan Poe", "J.R.R. Tolkien", "C.S. Lewis", "Roald Dahl", "Jane Austen", "Ernest Hemingway",
+      "Nicholas Sparks", "Colleen Hoover", "Shel Silverstein", "Agatha Christie", "Brothers Grimm", "Hans Christian Andersen", "Eric Carle", "Jeff Kinney", "R.L. Stine", "Rick Riordan",
+      "Suzanne Collins", "George R.R. Martin"
     ],
     "Harry Potter": [
       "Harry Potter", "Hermione Granger", "Ron Weasley", "Dumbledore", "Voldemort", "Snape", "Hagrid", "Draco Malfoy", "Dobby", "Sirius Black",
@@ -368,22 +337,20 @@
       "Ravenclaw", "Quidditch", "Golden Snitch", "wand", "Sorting Hat", "Invisibility Cloak", "Platform 9 3/4", "Hogwarts Express", "Diagon Alley", "Hogsmeade",
       "Butterbeer", "Dementor", "Horcrux", "Elder Wand", "Expelliarmus", "Muggle", "Bellatrix", "Dursleys", "Bertie Bott's Beans", "Chamber of Secrets"
     ],
-    "Fictional Characters": [
+    "Characters & Fantasy": [
       "Sherlock Holmes", "Harry Potter", "Frodo", "Gandalf", "Katniss Everdeen", "Romeo", "Juliet", "Cinderella", "Snow White", "Peter Pan",
       "Captain Hook", "Alice", "Mad Hatter", "Dorothy", "Willy Wonka", "Charlie Brown", "James Bond", "Indiana Jones", "Batman", "Superman",
       "Spider-Man", "Darth Vader", "Luke Skywalker", "Shrek", "Robin Hood", "Tarzan", "Dracula", "Frankenstein", "Pinocchio", "Winnie the Pooh",
       "Grinch", "Scrooge", "Cat in the Hat", "Curious George", "Rocky", "Forrest Gump", "Jack Sparrow", "Hermione Granger", "Gollum", "Mary Poppins",
-      "Tinker Bell", "Paddington Bear", "Bilbo Baggins", "Elsa", "Cruella de Vil"
-    ],
-    "Fantasy Series": [
-      "Harry Potter", "The Lord of the Rings", "The Hobbit", "Game of Thrones", "The Chronicles of Narnia", "Percy Jackson", "The Hunger Games", "Twilight", "Divergent", "The Wizard of Oz",
-      "Shrek", "Star Wars", "Eragon", "The Maze Runner", "A Court of Thorns and Roses", "Fourth Wing", "Wicked", "House of the Dragon", "Alice in Wonderland", "Peter Pan",
-      "Shadow and Bone", "The Witcher", "A Series of Unfortunate Events", "Artemis Fowl", "The Spiderwick Chronicles", "Pirates of the Caribbean", "Once Upon a Time", "Merlin", "Avatar: The Last Airbender", "Fantastic Beasts",
-      "Frozen", "The Princess Bride", "The Legend of Zelda", "Dungeons & Dragons", "Spirited Away", "King Arthur", "Hocus Pocus", "Beauty and the Beast", "Throne of Glass", "Wings of Fire"
+      "Tinker Bell", "Paddington Bear", "Bilbo Baggins", "Elsa", "Cruella de Vil", "The Lord of the Rings", "The Hobbit", "Game of Thrones", "The Chronicles of Narnia", "Percy Jackson",
+      "The Hunger Games", "Twilight", "Divergent", "The Wizard of Oz", "Star Wars", "Eragon", "The Maze Runner", "A Court of Thorns and Roses", "Fourth Wing", "Wicked",
+      "House of the Dragon", "Alice in Wonderland", "Shadow and Bone", "The Witcher", "A Series of Unfortunate Events", "Artemis Fowl", "The Spiderwick Chronicles", "Pirates of the Caribbean", "Once Upon a Time", "Merlin",
+      "Avatar: The Last Airbender", "Fantastic Beasts", "Frozen", "The Princess Bride", "The Legend of Zelda", "Dungeons & Dragons", "Spirited Away", "King Arthur", "Hocus Pocus", "Beauty and the Beast",
+      "Throne of Glass", "Wings of Fire"
     ]
   },
   "Animals & Nature": {
-    "Mammals": [
+    "Animals": [
       "dog", "cat", "horse", "cow", "pig", "sheep", "goat", "lion", "tiger", "bear",
       "elephant", "giraffe", "zebra", "monkey", "gorilla", "kangaroo", "koala", "panda", "polar bear", "wolf",
       "fox", "deer", "moose", "rabbit", "squirrel", "mouse", "rat", "hamster", "raccoon", "skunk",
@@ -391,14 +358,14 @@
       "porcupine", "hedgehog", "llama", "chipmunk", "leopard", "jaguar", "panther", "hyena", "warthog", "meerkat",
       "lemur", "orangutan", "chimpanzee", "baboon", "armadillo", "opossum", "mole", "ferret", "badger", "bobcat",
       "mountain lion", "coyote", "buffalo", "donkey", "alpaca", "reindeer", "elk", "antelope", "anteater", "platypus",
-      "wombat", "guinea pig", "chinchilla", "seal", "walrus", "manatee", "red panda", "grizzly bear", "snow leopard", "mongoose"
-    ],
-    "Birds": [
+      "wombat", "guinea pig", "chinchilla", "seal", "walrus", "manatee", "red panda", "grizzly bear", "snow leopard", "mongoose",
       "eagle", "owl", "parrot", "penguin", "flamingo", "chicken", "duck", "goose", "turkey", "swan",
       "peacock", "pigeon", "crow", "robin", "blue jay", "cardinal", "hummingbird", "woodpecker", "ostrich", "seagull",
       "pelican", "toucan", "vulture", "hawk", "canary", "stork", "bald eagle", "falcon", "raven", "sparrow",
       "finch", "mockingbird", "kingfisher", "puffin", "emu", "kiwi", "roadrunner", "dodo", "crane", "heron",
-      "cockatoo", "macaw", "parakeet", "rooster", "quail", "pheasant", "condor", "albatross", "bluebird"
+      "cockatoo", "macaw", "parakeet", "rooster", "quail", "pheasant", "condor", "albatross", "bluebird", "Golden Retriever",
+      "Labrador", "German Shepherd", "Poodle", "Bulldog", "Chihuahua", "Dachshund", "Pug", "Husky", "Corgi", "Pit Bull",
+      "Great Dane", "Dalmatian"
     ],
     "Sea Creatures": [
       "shark", "whale", "dolphin", "octopus", "squid", "jellyfish", "starfish", "crab", "lobster", "shrimp",
@@ -413,28 +380,19 @@
       "Parasaurolophus", "Dilophosaurus", "Megalodon", "Mosasaurus", "Plesiosaurus", "Pteranodon", "raptor", "Jurassic World", "The Land Before Time", "Littlefoot",
       "Barney", "Rex from Toy Story", "Dino from The Flintstones", "Ice Age", "paleontologist", "skeleton", "museum", "amber", "extinction", "herbivore",
       "carnivore", "tar pit", "caveman"
-    ],
-    "Dog Breeds": [
-      "Golden Retriever", "Labrador", "German Shepherd", "Poodle", "Bulldog", "Beagle", "Chihuahua", "Dachshund", "Pug", "Husky",
-      "Corgi", "Boxer", "Rottweiler", "Pit Bull", "Great Dane", "Dalmatian", "Shih Tzu", "Yorkie", "Border Collie", "Doberman",
-      "Saint Bernard", "Bernese Mountain Dog", "Goldendoodle", "Labradoodle", "Greyhound", "Chow Chow", "Pomeranian", "Maltese", "Basset Hound", "Australian Shepherd",
-      "Shiba Inu", "Cocker Spaniel", "Bichon Frise", "Jack Russell Terrier", "Boston Terrier", "French Bulldog", "Bloodhound", "Newfoundland", "Mastiff", "Cavalier King Charles Spaniel",
-      "Akita", "Samoyed", "Old English Sheepdog", "Collie", "Schnauzer", "Bull Terrier", "Whippet", "mutt"
     ]
   },
   "Mythology": {
-    "Greek Mythology": [
+    "Gods & Myths": [
       "Zeus", "Poseidon", "Hades", "Athena", "Aphrodite", "Apollo", "Hermes", "Ares", "Hercules", "Achilles",
       "Medusa", "Pegasus", "Cyclops", "Minotaur", "Trojan Horse", "Mount Olympus", "Pandora's Box", "Cupid", "Odysseus", "Perseus",
       "Icarus", "Titans", "Underworld", "Cerberus", "Hera", "Artemis", "Dionysus", "Demeter", "Persephone", "Hephaestus",
       "Kronos", "Atlas", "Prometheus", "Narcissus", "Midas", "Achilles' heel", "Trojan War", "Helen of Troy", "Golden Fleece", "Sirens",
-      "Hydra", "nymph", "Oracle of Delphi", "ambrosia"
-    ],
-    "Norse & Egyptian Mythology": [
-      "Thor", "Odin", "Loki", "Freya", "Hela", "Valhalla", "Asgard", "Mjolnir", "Ragnarok", "Valkyrie",
-      "frost giant", "Vikings", "longship", "horned helmet", "rune", "Fenrir", "Bifrost", "Yggdrasil", "mead", "God of War",
-      "Ra", "Anubis", "Osiris", "Isis", "Horus", "pharaoh", "pyramid", "mummy", "Sphinx", "King Tut",
-      "Cleopatra", "scarab", "hieroglyphics", "Nile River", "sarcophagus", "Book of the Dead", "Eye of Horus", "afterlife", "ankh", "tomb"
+      "Hydra", "nymph", "Oracle of Delphi", "ambrosia", "Thor", "Odin", "Loki", "Freya", "Hela", "Valhalla",
+      "Asgard", "Mjolnir", "Ragnarok", "Valkyrie", "frost giant", "Vikings", "longship", "horned helmet", "rune", "Fenrir",
+      "Bifrost", "Yggdrasil", "mead", "God of War", "Ra", "Anubis", "Osiris", "Isis", "Horus", "pharaoh",
+      "pyramid", "mummy", "Sphinx", "King Tut", "Cleopatra", "scarab", "hieroglyphics", "Nile River", "sarcophagus", "Book of the Dead",
+      "Eye of Horus", "afterlife", "ankh", "tomb"
     ],
     "Legends & Folklore": [
       "King Arthur", "Excalibur", "Merlin", "Round Table", "Holy Grail", "Camelot", "Robin Hood", "Sherwood Forest", "Atlantis", "El Dorado",
@@ -451,35 +409,23 @@
     ]
   },
   "Brands & Companies": {
-    "Tech Companies": [
+    "Tech & Cars": [
       "Apple", "Google", "Microsoft", "Amazon", "Facebook", "Instagram", "TikTok", "Snapchat", "Twitter", "Netflix",
       "YouTube", "Tesla", "Samsung", "Sony", "Nintendo", "Uber", "Spotify", "Disney+", "Dell", "HP",
-      "Intel", "IBM", "Zoom", "Reddit", "Pinterest", "LinkedIn", "eBay", "PayPal", "Venmo", "ChatGPT",
-      "Xbox", "PlayStation", "Nvidia", "Adobe", "WhatsApp", "Discord", "Twitch", "Airbnb", "DoorDash", "Lyft",
-      "Roku", "Hulu", "Fitbit", "GoPro", "Canon", "Bose", "Beats", "Logitech", "Verizon", "Best Buy"
+      "Zoom", "Reddit", "eBay", "PayPal", "Venmo", "ChatGPT", "Xbox", "PlayStation", "WhatsApp", "Discord",
+      "Twitch", "Airbnb", "DoorDash", "Lyft", "Hulu", "Beats", "Verizon", "Best Buy", "Ford", "Chevrolet",
+      "Toyota", "Honda", "BMW", "Mercedes-Benz", "Audi", "Volkswagen", "Jeep", "Dodge", "Ferrari", "Lamborghini",
+      "Porsche", "Nissan", "Subaru", "Hyundai", "Kia", "Mazda", "Cadillac", "Lexus", "Volvo", "Jaguar",
+      "Land Rover", "Chrysler", "Rolls-Royce", "Bugatti", "Acura", "Lincoln", "Ram", "Hummer", "DeLorean"
     ],
-    "Car Brands": [
-      "Ford", "Chevrolet", "Toyota", "Honda", "Tesla", "BMW", "Mercedes-Benz", "Audi", "Volkswagen", "Jeep",
-      "Dodge", "Ferrari", "Lamborghini", "Porsche", "Nissan", "Subaru", "Hyundai", "Kia", "Mazda", "Cadillac",
-      "Lexus", "Volvo", "Mini", "Jaguar", "Land Rover", "GMC", "Buick", "Chrysler", "Rolls-Royce", "Bugatti",
-      "Acura", "Infiniti", "Lincoln", "Ram", "Mitsubishi", "Fiat", "Maserati", "Aston Martin", "Bentley", "McLaren",
-      "Rivian", "Hummer", "Pontiac", "Saturn", "Oldsmobile", "DeLorean"
-    ],
-    "Fast Food Chains": [
+    "Food & Fashion": [
       "McDonald's", "Burger King", "Wendy's", "Taco Bell", "KFC", "Chick-fil-A", "Subway", "Pizza Hut", "Domino's", "Papa John's",
       "Starbucks", "Dunkin'", "Chipotle", "Panda Express", "Popeyes", "Sonic", "Arby's", "Five Guys", "In-N-Out", "Jack in the Box",
       "Dairy Queen", "White Castle", "Little Caesars", "Panera", "Culver's", "Shake Shack", "Whataburger", "Raising Cane's", "Jimmy John's", "Wingstop",
-      "Hardee's", "Carl's Jr.", "Krispy Kreme", "Tim Hortons", "Del Taco", "Qdoba", "Firehouse Subs", "Jersey Mike's", "Zaxby's", "Bojangles",
-      "Long John Silver's", "A&W", "Steak 'n Shake", "Checkers", "Baskin-Robbins", "Cold Stone", "Auntie Anne's", "Cinnabon", "Dutch Bros", "Crumbl",
-      "Jamba Juice", "Smoothie King"
-    ],
-    "Fashion Brands": [
-      "Nike", "Adidas", "Gucci", "Louis Vuitton", "Chanel", "Prada", "Versace", "Calvin Klein", "Ralph Lauren", "Tommy Hilfiger",
-      "Gap", "Old Navy", "H&M", "Zara", "Levi's", "Under Armour", "Puma", "Vans", "Converse", "Crocs",
-      "Lululemon", "American Eagle", "Abercrombie", "Hollister", "Victoria's Secret", "Michael Kors", "Coach", "North Face", "Supreme", "Skims",
-      "Dior", "Burberry", "Fendi", "Balenciaga", "Armani", "Dolce & Gabbana", "Tiffany", "Rolex", "Ray-Ban", "Oakley",
-      "UGG", "Timberland", "Dr. Martens", "New Balance", "Reebok", "Champion", "Patagonia", "Columbia", "Carhartt", "Forever 21",
-      "Shein", "Kate Spade"
+      "Krispy Kreme", "Baskin-Robbins", "Cold Stone", "Cinnabon", "Crumbl", "Nike", "Adidas", "Gucci", "Louis Vuitton", "Chanel",
+      "Prada", "Versace", "Calvin Klein", "Ralph Lauren", "Tommy Hilfiger", "Gap", "Old Navy", "H&M", "Levi's", "Under Armour",
+      "Puma", "Vans", "Converse", "Crocs", "Lululemon", "American Eagle", "Abercrombie", "Hollister", "Victoria's Secret", "Michael Kors",
+      "Coach", "North Face", "Skims", "Dior", "Tiffany", "Rolex", "Ray-Ban", "UGG", "New Balance", "Forever 21"
     ]
   },
   "Sci-Fi & Fantasy": {
@@ -542,7 +488,8 @@
     "Mom's Side": [
       "Rylie (Grandpa)", "Katie", "Rylie Sr.", "Alice", "Leslie", "Chad", "Leah", "Cara", "Kacey", "Joe",
       "Kaylee (Kacey's daughter)", "Kaleb", "Nick", "Jonny", "Rosie", "Jenna", "Brian", "Kelly", "Dana", "Dick",
-      "Dave (Rylie's brother)", "Alicia (Dick's daughter)", "Dave (Dick's son)", "Dacia", "Becky", "Tricia", "Shawn", "Kaylee (triplet)", "Reid", "Ava", "Fields"
+      "Dave (Rylie's brother)", "Alicia (Dick's daughter)", "Dave (Dick's son)", "Dacia", "Becky", "Tricia", "Shawn", "Kaylee (triplet)", "Reid", "Ava",
+      "Fields"
     ],
     "Whole Family": [
       "Charlie", "Vernetta", "Judy", "Joan", "Kenny", "Craig", "Chad", "Leslie", "Leah", "Cara",
