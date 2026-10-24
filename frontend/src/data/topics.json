@@ -64,6 +64,154 @@
       "Zoloft", "Prozac", "Lexapro", "Ambien", "Valium", "Vicodin", "Percocet", "OxyContin", "morphine", "Viagra",
       "Cialis", "birth control", "Plan B", "Ozempic", "Lipitor", "metformin", "prednisone", "steroids", "Narcan", "Rogaine",
       "Botox", "Accutane"
+    ],
+    "Elements": [
+      "hydrogen", "helium", "lithium", "beryllium", "boron", "carbon", "nitrogen", "oxygen", "fluorine", "neon",
+      "sodium", "magnesium", "aluminum", "silicon", "phosphorus", "sulfur", "chlorine", "argon", "potassium", "calcium",
+      "titanium", "chromium", "manganese", "iron", "cobalt", "nickel", "copper", "zinc", "gallium", "arsenic",
+      "selenium", "bromine", "krypton", "strontium", "silver", "tin", "iodine", "xenon", "cesium", "tungsten",
+      "platinum", "gold", "mercury", "lead", "radon", "radium", "uranium", "plutonium", "einsteinium", "noble gas",
+      "halogen", "alkali metal", "atomic number", "Dmitri Mendeleev"
+    ],
+    "Famous Scientists": [
+      "Albert Einstein", "Isaac Newton", "Galileo", "Charles Darwin", "Marie Curie", "Nikola Tesla", "Thomas Edison", "Stephen Hawking", "Carl Sagan", "Neil deGrasse Tyson",
+      "Bill Nye", "Copernicus", "Johannes Kepler", "Aristotle", "Archimedes", "Pythagoras", "Euclid", "Leonardo da Vinci", "Louis Pasteur", "Gregor Mendel",
+      "Alexander Fleming", "Edward Jenner", "Rosalind Franklin", "Watson and Crick", "Niels Bohr", "Max Planck", "Werner Heisenberg", "Erwin Schrödinger", "Richard Feynman", "Robert Oppenheimer",
+      "Enrico Fermi", "Michael Faraday", "James Clerk Maxwell", "Alan Turing", "Ada Lovelace", "Jane Goodall", "Rachel Carson", "Benjamin Franklin", "Alexander Graham Bell", "Edwin Hubble",
+      "Antoine Lavoisier", "Robert Hooke", "Ernest Rutherford", "Sigmund Freud", "Ivan Pavlov", "George Washington Carver", "Katherine Johnson", "Jonas Salk", "Tim Berners-Lee", "Hippocrates",
+      "Leonhard Euler", "Carl Gauss"
+    ],
+    "Geology & Rocks": [
+      "rock", "mineral", "crystal", "granite", "marble", "limestone", "sandstone", "basalt", "obsidian", "pumice",
+      "quartz", "diamond", "ruby", "sapphire", "emerald", "amethyst", "geode", "fossil", "igneous rock", "sedimentary rock",
+      "metamorphic rock", "rock cycle", "magma", "lava", "volcano", "earthquake", "fault line", "tectonic plates", "Pangaea", "continental drift",
+      "Ring of Fire", "San Andreas Fault", "Richter scale", "seismograph", "geyser", "cave", "stalactite", "stalagmite", "canyon", "erosion",
+      "glacier", "Earth's core", "mantle", "crust", "geologist", "rock hammer", "gold nugget", "coal", "Mohs scale", "sinkhole",
+      "sand dune"
+    ],
+    "Earth & Environment": [
+      "climate change", "global warming", "greenhouse effect", "carbon footprint", "pollution", "smog", "acid rain", "ozone layer", "deforestation", "recycling",
+      "compost", "landfill", "plastic straw", "Great Pacific Garbage Patch", "oil spill", "endangered species", "conservation", "rainforest", "wetland", "coral bleaching",
+      "melting ice caps", "sea level rise", "renewable energy", "solar panel", "wind turbine", "electric car", "Earth Day", "reduce, reuse, recycle", "water cycle", "evaporation",
+      "condensation", "precipitation", "carbon cycle", "biodiversity", "ecosystem", "food web", "invasive species", "habitat loss", "drought", "wildfire",
+      "Greta Thunberg", "Al Gore", "EPA", "fossil fuels", "tree hugger", "reusable bag", "Captain Planet", "The Lorax"
+    ],
+    "Cells & Microbiology": [
+      "cell", "nucleus", "mitochondria", "the powerhouse of the cell", "cell membrane", "cell wall", "cytoplasm", "ribosome", "chloroplast", "vacuole",
+      "DNA", "RNA", "chromosome", "gene", "double helix", "mutation", "mitosis", "meiosis", "stem cell", "red blood cell",
+      "white blood cell", "platelet", "neuron", "bacteria", "virus", "fungus", "amoeba", "paramecium", "algae", "yeast",
+      "E. coli", "salmonella", "probiotics", "antibiotics", "germ", "microbe", "Petri dish", "microscope", "immune system", "antibody",
+      "vaccine", "pathogen", "protein", "enzyme", "CRISPR", "clone", "Dolly the sheep", "genome", "DNA test", "tardigrade"
+    ],
+    "Diseases & Medicine": [
+      "common cold", "flu", "COVID-19", "chickenpox", "measles", "mumps", "strep throat", "pink eye", "ear infection", "allergies",
+      "asthma", "diabetes", "cancer", "heart attack", "stroke", "concussion", "broken bone", "sprain", "fever", "migraine",
+      "food poisoning", "appendicitis", "pneumonia", "bronchitis", "tuberculosis", "malaria", "the plague", "polio", "rabies", "mono",
+      "acne", "X-ray", "MRI", "CAT scan", "ultrasound", "stethoscope", "blood pressure", "blood test", "surgery", "anesthesia",
+      "stitches", "cast", "crutches", "wheelchair", "ER", "ICU", "CPR", "defibrillator", "pacemaker", "insulin",
+      "organ transplant", "physical therapy", "pandemic", "quarantine"
+    ],
+    "Space Exploration": [
+      "NASA", "SpaceX", "Apollo 11", "Apollo 13", "Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Sputnik", "Laika", "Space Race",
+      "Space Shuttle", "Challenger", "International Space Station", "Hubble Space Telescope", "James Webb Space Telescope", "Mars rover", "Curiosity", "Perseverance", "Voyager", "Artemis",
+      "Elon Musk", "Starship", "Falcon 9", "Blue Origin", "Jeff Bezos", "cosmonaut", "spacesuit", "spacewalk", "zero gravity", "launch pad",
+      "countdown", "liftoff", "rocket booster", "mission control", "Houston, we have a problem", "one small step", "astronaut ice cream", "Kennedy Space Center", "Cape Canaveral", "satellite",
+      "space junk", "space tourism", "Mars colony", "alien life", "Sally Ride", "John Glenn", "Chris Hadfield", "Space Camp"
+    ],
+    "Lab & Scientific Method": [
+      "hypothesis", "experiment", "variable", "control group", "data", "observation", "conclusion", "theory", "scientific law", "peer review",
+      "scientific method", "lab coat", "safety goggles", "rubber gloves", "beaker", "flask", "Erlenmeyer flask", "test tube", "pipette", "graduated cylinder",
+      "Bunsen burner", "microscope", "Petri dish", "centrifuge", "thermometer", "stopwatch", "tongs", "funnel", "lab notebook", "safety shower",
+      "eyewash station", "fume hood", "hazmat suit", "biohazard", "lab rat", "guinea pig", "placebo", "double-blind study", "sample size", "graph",
+      "results", "science fair", "trifold poster", "volcano project", "potato battery", "egg drop", "periodic table", "Eureka!"
+    ],
+    "Units & Measurements": [
+      "inch", "foot", "yard", "mile", "meter", "centimeter", "millimeter", "kilometer", "light-year", "ounce",
+      "pound", "ton", "gram", "kilogram", "milligram", "cup", "pint", "quart", "gallon", "liter",
+      "milliliter", "teaspoon", "tablespoon", "second", "minute", "hour", "decade", "century", "millennium", "degree",
+      "Fahrenheit", "Celsius", "Kelvin", "volt", "watt", "amp", "horsepower", "calorie", "byte", "gigabyte",
+      "decibel", "acre", "knot", "mph", "metric system", "ruler", "yardstick", "scale", "stopwatch"
+    ],
+    "Psychology & the Brain": [
+      "brain", "synapse", "dopamine", "serotonin", "adrenaline", "memory", "dream", "nightmare", "sleepwalking", "déjà vu",
+      "hypnosis", "IQ", "left brain", "right brain", "frontal lobe", "cerebellum", "brain freeze", "phobia", "claustrophobia", "arachnophobia",
+      "fear of heights", "anxiety", "depression", "ADHD", "OCD", "autism", "PTSD", "therapy", "therapist", "psychologist",
+      "Sigmund Freud", "Pavlov's dog", "placebo effect", "peer pressure", "introvert", "extrovert", "personality test", "Myers-Briggs", "optical illusion", "muscle memory",
+      "short-term memory", "photographic memory", "multitasking", "daydreaming", "fight or flight", "body language", "lie detector", "reverse psychology", "mind reading", "sixth sense",
+      "amnesia"
+    ],
+    "Animal Classification": [
+      "mammal", "reptile", "amphibian", "bird", "fish", "insect", "arachnid", "crustacean", "mollusk", "marsupial",
+      "primate", "rodent", "carnivore", "herbivore", "omnivore", "scavenger", "vertebrate", "invertebrate", "warm-blooded", "cold-blooded",
+      "nocturnal", "hibernation", "migration", "camouflage", "metamorphosis", "exoskeleton", "gills", "fins", "scales", "feathers",
+      "fur", "antlers", "tusk", "venom", "echolocation", "pack", "herd", "flock", "school of fish", "pride of lions",
+      "kingdom", "species", "genus", "apex predator", "egg-laying mammal", "platypus", "natural selection", "survival of the fittest", "zoologist"
+    ],
+    "Modern Physics": [
+      "quantum physics", "relativity", "E=mc²", "speed of light", "time dilation", "wormhole", "event horizon", "dark matter", "dark energy", "antimatter",
+      "Higgs boson", "particle accelerator", "Large Hadron Collider", "quark", "photon", "neutrino", "nuclear fission", "nuclear fusion", "atomic bomb", "Manhattan Project",
+      "Schrödinger's cat", "uncertainty principle", "string theory", "multiverse", "parallel universe", "spacetime", "gravitational waves", "quantum computer", "quantum entanglement", "superposition",
+      "half-life", "Geiger counter", "Chernobyl", "Stephen Hawking", "Oppenheimer", "theory of everything", "teleportation", "electromagnetic spectrum", "X-rays", "gamma rays",
+      "infrared", "ultraviolet", "microwaves", "radio waves", "subatomic particle", "Big Bang", "black hole", "time travel"
+    ]
+  },
+  "Technology & Engineering": {
+    "Coding & Computer Science": [
+      "code", "programmer", "software", "algorithm", "bug", "debugging", "variable", "loop", "function", "if statement",
+      "Python", "JavaScript", "Java", "C++", "HTML", "CSS", "SQL", "Scratch", "binary", "ones and zeros",
+      "compiler", "syntax error", "Hello, World!", "open source", "GitHub", "Stack Overflow", "app", "website", "database", "the cloud",
+      "server", "API", "copy and paste", "Ctrl+Z", "Ctrl+Alt+Delete", "keyboard shortcut", "hackathon", "software engineer", "computer science", "data science",
+      "game developer", "user interface", "beta version", "software update", "blue screen of death", "404 error", "infinite loop", "spaghetti code", "pseudocode", "Linux"
+    ],
+    "Computer Hardware": [
+      "laptop", "desktop", "monitor", "keyboard", "mouse", "trackpad", "webcam", "microphone", "headphones", "speakers",
+      "printer", "scanner", "USB", "flash drive", "hard drive", "SSD", "RAM", "CPU", "GPU", "motherboard",
+      "graphics card", "power supply", "cooling fan", "charger", "HDMI cable", "Ethernet cable", "router", "modem", "Bluetooth", "touchscreen",
+      "smartphone", "tablet", "iPad", "smartwatch", "game console", "VR headset", "floppy disk", "CD-ROM", "DVD", "memory card",
+      "pixel", "gaming PC", "mechanical keyboard", "calculator", "TI-84", "server rack", "supercomputer", "microchip"
+    ],
+    "Internet & Cybersecurity": [
+      "internet", "World Wide Web", "URL", "browser", "search engine", "email", "spam", "Wi-Fi", "password", "two-factor authentication",
+      "hacker", "computer virus", "malware", "ransomware", "phishing", "scam email", "firewall", "antivirus", "VPN", "encryption",
+      "cookies", "pop-up ad", "ad blocker", "download", "upload", "streaming", "buffering", "lag", "bandwidth", "IP address",
+      "dial-up", "cloud storage", "data breach", "identity theft", "dark web", "bot", "CAPTCHA", "I'm not a robot", "incognito mode", "clear history",
+      "Wi-Fi password", "going viral", "emoji", "hashtag", "troll", "Anonymous", "Y2K", "server down", "username", "forgot password"
+    ],
+    "Artificial Intelligence": [
+      "artificial intelligence", "machine learning", "neural network", "deep learning", "chatbot", "ChatGPT", "Claude", "Gemini", "Siri", "Alexa",
+      "Google Assistant", "Copilot", "self-driving car", "Waymo", "facial recognition", "voice assistant", "deepfake", "AI art", "prompt", "algorithm",
+      "training data", "large language model", "AI hallucination", "Turing test", "Alan Turing", "AI takeover", "Skynet", "HAL 9000", "Terminator", "WALL-E",
+      "Roomba", "drone", "Boston Dynamics", "robot dog", "humanoid robot", "OpenAI", "Anthropic", "Nvidia", "IBM Watson", "Deep Blue",
+      "AlphaGo", "computer vision", "automation", "recommendation algorithm", "smart home", "autocorrect", "robot vacuum", "data center"
+    ],
+    "Machines & Engineering": [
+      "lever", "pulley", "wheel and axle", "inclined plane", "wedge", "screw", "gear", "spring", "engine", "motor",
+      "turbine", "piston", "hydraulics", "crane", "conveyor belt", "assembly line", "robot arm", "3D printer", "blueprint", "suspension bridge",
+      "skyscraper", "dam", "tunnel", "Panama Canal", "civil engineer", "mechanical engineer", "electrical engineer", "architect", "welding", "rivet",
+      "steel beam", "concrete", "scaffolding", "hard hat", "construction site", "excavator", "wrecking ball", "catapult", "trebuchet", "Rube Goldberg machine",
+      "perpetual motion machine", "windmill", "water wheel", "steam engine", "Industrial Revolution", "truss", "load-bearing wall", "simple machine"
+    ],
+    "Cars & Engines": [
+      "engine", "transmission", "stick shift", "clutch", "brakes", "gas pedal", "steering wheel", "tires", "flat tire", "spare tire",
+      "car jack", "oil change", "spark plug", "car battery", "alternator", "radiator", "muffler", "exhaust pipe", "turbocharger", "horsepower",
+      "V8", "horn", "headlights", "windshield wipers", "rearview mirror", "seatbelt", "airbag", "cruise control", "odometer", "speedometer",
+      "check engine light", "gas tank", "electric car", "hybrid", "charging station", "Tesla", "mechanic", "car wash", "jumper cables", "tow truck",
+      "drag race", "burnout", "drifting", "NASCAR", "Formula 1", "pit stop", "racing stripes", "license plate", "parallel parking", "driver's license",
+      "new car smell"
+    ],
+    "Electronics & Circuits": [
+      "circuit", "battery", "wire", "switch", "light bulb", "LED", "resistor", "capacitor", "transistor", "diode",
+      "microchip", "circuit board", "soldering iron", "voltage", "current", "resistance", "Ohm's law", "short circuit", "series circuit", "parallel circuit",
+      "conductor", "insulator", "ground wire", "fuse", "circuit breaker", "outlet", "plug", "multimeter", "Arduino", "Raspberry Pi",
+      "semiconductor", "silicon", "static electricity", "electric shock", "Tesla coil", "electromagnet", "generator", "AC/DC", "alternating current", "direct current",
+      "Thomas Edison", "Nikola Tesla", "Benjamin Franklin's kite", "lightning rod", "solar cell", "remote control", "sensor", "antenna", "electrician"
+    ],
+    "Energy & Power": [
+      "energy", "power plant", "electricity", "solar power", "wind power", "hydroelectric power", "nuclear power", "geothermal energy", "coal", "natural gas",
+      "crude oil", "gasoline", "fossil fuels", "fracking", "oil rig", "pipeline", "power lines", "power grid", "blackout", "generator",
+      "battery", "solar panel", "wind turbine", "Hoover Dam", "nuclear reactor", "uranium", "Three Mile Island", "biofuel", "ethanol", "hydrogen fuel",
+      "kinetic energy", "potential energy", "thermal energy", "calorie", "electric bill", "light switch", "Energizer Bunny", "Duracell", "power outage", "kilowatt-hour",
+      "energy efficient", "LED bulb", "carbon emissions", "OPEC", "gas station", "gas prices", "nuclear power plant", "renewable energy", "Tesla Powerwall"
     ]
   },
   "Media": {
@@ -116,6 +264,30 @@
       "Inside Out", "Despicable Me", "Minions", "Madagascar", "Kung Fu Panda", "Mamma Mia!", "The Princess Diaries", "13 Going on 30", "She's the Man", "Napoleon Dynamite",
       "Dumb and Dumber", "Happy Gilmore", "Billy Madison", "Grown Ups", "Talladega Nights", "Wedding Crashers", "Mrs. Doubtfire", "Ferris Bueller's Day Off", "The Breakfast Club", "Twister",
       "Wicked", "Night at the Museum", "Shrek 2", "Hocus Pocus", "Freaky Friday", "The Parent Trap", "Remember the Titans", "Cheaper by the Dozen"
+    ],
+    "Reality TV": [
+      "Survivor", "The Bachelor", "The Bachelorette", "Love Island", "Big Brother", "The Amazing Race", "American Idol", "The Voice", "America's Got Talent", "Dancing with the Stars",
+      "Keeping Up with the Kardashians", "Jersey Shore", "Real Housewives", "Shark Tank", "MasterChef", "Hell's Kitchen", "Kitchen Nightmares", "Chopped", "Top Chef", "The Great British Bake Off",
+      "Nailed It!", "RuPaul's Drag Race", "Project Runway", "Queer Eye", "Love Is Blind", "Too Hot to Handle", "Vanderpump Rules", "Selling Sunset", "Below Deck", "Duck Dynasty",
+      "Pawn Stars", "Storage Wars", "Cops", "Dog the Bounty Hunter", "Deadliest Catch", "MythBusters", "Fixer Upper", "Property Brothers", "Extreme Makeover: Home Edition", "Hoarders",
+      "Intervention", "90 Day Fiancé", "Teen Mom", "Toddlers & Tiaras", "Dance Moms", "Naked and Afraid", "Fear Factor", "Wipeout", "Catfish", "Married at First Sight",
+      "Say Yes to the Dress", "Cake Boss", "Beast Games", "The Circle"
+    ],
+    "TV Characters": [
+      "Michael Scott", "Dwight Schrute", "Jim Halpert", "Pam Beesly", "Kevin Malone", "Ross Geller", "Rachel Green", "Monica Geller", "Chandler Bing", "Joey Tribbiani",
+      "Phoebe Buffay", "Sheldon Cooper", "Penny", "Leslie Knope", "Ron Swanson", "Andy Dwyer", "April Ludgate", "Barney Stinson", "Ted Mosby", "Jake Peralta",
+      "Captain Holt", "Phil Dunphy", "Gloria Pritchett", "Jerry Seinfeld", "Kramer", "George Costanza", "Elaine Benes", "Frasier Crane", "Steve Urkel", "Carlton Banks",
+      "Al Bundy", "Fonzie", "Lucy Ricardo", "Archie Bunker", "Red Forman", "Fez", "Kelso", "Zack Morris", "Tim the Tool Man Taylor", "Hannah Montana",
+      "Ted Lasso", "Roy Kent", "Moira Rose", "David Rose", "Charlie Kelly", "Dennis Reynolds", "Tony Soprano", "Don Draper", "Eleven", "Jon Snow",
+      "Daenerys Targaryen", "Tyrion Lannister", "Dr. House", "Meredith Grey", "Carrie Bradshaw", "Lorelai Gilmore", "Kendall Roy", "Troy and Abed"
+    ],
+    "Game Shows": [
+      "Jeopardy!", "Wheel of Fortune", "The Price Is Right", "Family Feud", "Who Wants to Be a Millionaire", "Deal or No Deal", "Let's Make a Deal", "Are You Smarter Than a 5th Grader?", "Minute to Win It", "The Weakest Link",
+      "Hollywood Squares", "The Newlywed Game", "Match Game", "Press Your Luck", "Card Sharks", "Password", "Pyramid", "The Chase", "Supermarket Sweep", "Double Dare",
+      "Legends of the Hidden Temple", "Cash Cab", "The Wall", "Alex Trebek", "Pat Sajak", "Vanna White", "Bob Barker", "Drew Carey", "Steve Harvey", "Ken Jennings",
+      "Howie Mandel", "Regis Philbin", "Final Jeopardy", "Daily Double", "Plinko", "Showcase Showdown", "Come on down!", "Survey says!", "phone a friend", "50:50",
+      "final answer", "buy a vowel", "lifeline", "buzzer", "lightning round", "grand prize", "consolation prize", "studio audience", "banker's offer", "Big money, no Whammies!",
+      "spin the wheel"
     ]
   },
   "Geography": {
@@ -173,6 +345,22 @@
       "Brisbane", "Perth", "Auckland", "Bondi Beach", "Pacific Ocean", "kiwi bird", "emu", "platypus", "wombat", "Tasmanian devil",
       "dingo", "crocodile", "Steve Irwin", "Crocodile Dundee", "Vegemite", "surfing", "Hobbiton", "Lord of the Rings", "Maori", "haka",
       "Easter Island", "Moana"
+    ],
+    "Famous Landmarks": [
+      "Eiffel Tower", "Statue of Liberty", "Great Wall of China", "Taj Mahal", "Colosseum", "Pyramids of Giza", "Sphinx", "Stonehenge", "Big Ben", "Leaning Tower of Pisa",
+      "Machu Picchu", "Christ the Redeemer", "Sydney Opera House", "Golden Gate Bridge", "Mount Rushmore", "Grand Canyon", "Niagara Falls", "Mount Everest", "Empire State Building", "Times Square",
+      "Hollywood Sign", "Space Needle", "Gateway Arch", "White House", "Lincoln Memorial", "Washington Monument", "Burj Khalifa", "Petra", "Parthenon", "Notre-Dame",
+      "Louvre", "Arc de Triomphe", "Buckingham Palace", "Tower Bridge", "London Eye", "Kremlin", "Angkor Wat", "Chichen Itza", "Easter Island", "Mount Fuji",
+      "Forbidden City", "Neuschwanstein Castle", "Sagrada Família", "Brandenburg Gate", "Old Faithful", "Alcatraz", "Las Vegas Strip", "Hoover Dam", "CN Tower", "Great Barrier Reef",
+      "Victoria Falls", "Liberty Bell"
+    ],
+    "World Cities": [
+      "New York City", "Los Angeles", "Chicago", "London", "Paris", "Tokyo", "Rome", "Venice", "Florence", "Barcelona",
+      "Madrid", "Berlin", "Amsterdam", "Dublin", "Moscow", "Istanbul", "Dubai", "Cairo", "Mumbai", "Beijing",
+      "Shanghai", "Hong Kong", "Seoul", "Bangkok", "Singapore", "Sydney", "Melbourne", "Toronto", "Vancouver", "Mexico City",
+      "Cancún", "Rio de Janeiro", "Buenos Aires", "Havana", "Cape Town", "Las Vegas", "Miami", "New Orleans", "Nashville", "Seattle",
+      "San Francisco", "Boston", "Honolulu", "Prague", "Vienna", "Athens", "Lisbon", "Edinburgh", "Jerusalem", "Kyoto",
+      "Marrakech", "Reykjavik", "Copenhagen", "Stockholm"
     ]
   },
   "Sports": {
@@ -210,6 +398,22 @@
       "Dallas Mavericks", "Phoenix Suns", "San Antonio Spurs", "Philadelphia 76ers", "Denver Nuggets", "Cleveland Cavaliers", "Minnesota Timberwolves", "Oklahoma City Thunder", "New York Yankees", "Boston Red Sox",
       "Chicago Cubs", "Los Angeles Dodgers", "St. Louis Cardinals", "Atlanta Braves", "San Francisco Giants", "Houston Astros", "Milwaukee Brewers", "Minnesota Twins", "Chicago White Sox", "Detroit Tigers",
       "New York Mets", "Chicago Blackhawks", "Detroit Red Wings", "Minnesota Wild", "Pittsburgh Penguins", "Toronto Maple Leafs", "Harlem Globetrotters", "Manchester United", "Real Madrid"
+    ],
+    "Sports Moves & Terms": [
+      "touchdown", "field goal", "Hail Mary", "fumble", "interception", "sack", "blitz", "home run", "grand slam", "strikeout",
+      "no-hitter", "bunt", "stolen base", "curveball", "knuckleball", "seventh-inning stretch", "slam dunk", "three-pointer", "alley-oop", "free throw",
+      "buzzer beater", "airball", "double dribble", "traveling", "crossover", "hat trick", "penalty kick", "bicycle kick", "header", "offside",
+      "red card", "hole in one", "birdie", "bogey", "ace", "match point", "knockout", "uppercut", "body slam", "power play",
+      "slap shot", "penalty box", "Zamboni", "photo finish", "relay", "belly flop", "cannonball", "kickflip", "half-pipe", "overtime",
+      "sudden death", "MVP", "trash talk", "Gatorade shower", "victory lap", "the wave", "halftime show", "tailgate"
+    ],
+    "Wrestlers & Fighters": [
+      "Hulk Hogan", "The Rock", "John Cena", "Stone Cold Steve Austin", "The Undertaker", "Macho Man Randy Savage", "André the Giant", "Ric Flair", "Rey Mysterio", "Triple H",
+      "Shawn Michaels", "Bret Hart", "Randy Orton", "Brock Lesnar", "Roman Reigns", "Becky Lynch", "Ronda Rousey", "Cody Rhodes", "The Ultimate Warrior", "Mankind",
+      "Kane", "Big Show", "Logan Paul", "Muhammad Ali", "Mike Tyson", "Floyd Mayweather", "Manny Pacquiao", "George Foreman", "Rocky Balboa", "Conor McGregor",
+      "Jon Jones", "Khabib", "Dana White", "Jake Paul", "Bruce Lee", "Jackie Chan", "Chuck Norris", "Hulkamania", "WWE", "WrestleMania",
+      "Royal Rumble", "UFC", "the Octagon", "steel cage match", "tag team", "championship belt", "People's Elbow", "Stone Cold Stunner", "Tombstone Piledriver", "You can't see me",
+      "Nacho Libre", "sumo wrestler"
     ]
   },
   "Food & Drink": {
@@ -274,6 +478,28 @@
       "Perkins", "Bob Evans", "Dave & Buster's", "Chuck E. Cheese", "Rainforest Cafe", "Hard Rock Cafe", "Margaritaville", "Twin Peaks", "Famous Dave's", "Pizza Ranch",
       "Noodles & Company", "diner", "steakhouse", "buffet", "food truck", "drive-thru", "pizzeria", "sports bar", "sushi bar", "hot dog stand",
       "hibachi"
+    ],
+    "Fast Food Menu": [
+      "Big Mac", "Quarter Pounder", "McNuggets", "McFlurry", "Happy Meal", "Egg McMuffin", "Filet-O-Fish", "McRib", "Shamrock Shake", "hash browns",
+      "Whopper", "Baconator", "Frosty", "Crunchwrap Supreme", "Doritos Locos Taco", "Baja Blast", "Chalupa", "Mexican Pizza", "chicken sandwich", "waffle fries",
+      "Blizzard", "Dilly Bar", "curly fries", "Jumbo Jack", "Footlong", "Animal Style", "Double-Double", "Bloomin' Onion", "Pumpkin Spice Latte", "Munchkins",
+      "Cinnabon", "Orange Chicken", "Famous Bowl", "popcorn chicken", "Chicken Fries", "onion rings", "mozzarella sticks", "breadsticks", "stuffed crust pizza", "Hot-N-Ready",
+      "combo meal", "kids meal", "Dollar Menu", "supersize", "drive-thru", "sweet tea", "chicken tenders", "Wendy's chili", "roast beef sandwich", "apple pie"
+    ],
+    "Coffee & Soft Drinks": [
+      "coffee", "espresso", "latte", "cappuccino", "mocha", "Americano", "macchiato", "cold brew", "iced coffee", "chai latte",
+      "matcha", "green tea", "sweet tea", "lemonade", "Arnold Palmer", "hot chocolate", "smoothie", "milkshake", "boba tea", "orange juice",
+      "chocolate milk", "Coca-Cola", "Pepsi", "Dr Pepper", "Sprite", "Mountain Dew", "root beer", "ginger ale", "Fanta", "Red Bull",
+      "Monster", "Celsius", "Gatorade", "Capri Sun", "Kool-Aid", "Sunny D", "Yoo-hoo", "LaCroix", "sparkling water", "coconut water",
+      "kombucha", "protein shake", "slushie", "ICEE", "Slurpee", "eggnog", "apple cider", "Shirley Temple", "Starbucks", "Dunkin'",
+      "Prime", "Liquid Death", "Stanley cup"
+    ],
+    "Condiments & Sauces": [
+      "ketchup", "mustard", "mayonnaise", "relish", "ranch", "barbecue sauce", "hot sauce", "Sriracha", "Tabasco", "soy sauce",
+      "teriyaki", "salsa", "guacamole", "sour cream", "hummus", "tzatziki", "pesto", "marinara", "Alfredo sauce", "gravy",
+      "honey mustard", "Thousand Island", "blue cheese dressing", "Caesar dressing", "Italian dressing", "balsamic vinegar", "olive oil", "butter", "peanut butter", "Nutella",
+      "jelly", "maple syrup", "honey", "whipped cream", "chocolate syrup", "caramel sauce", "queso", "nacho cheese", "tartar sauce", "cocktail sauce",
+      "horseradish", "wasabi", "chili oil", "Worcestershire sauce", "A1 steak sauce", "Buffalo sauce", "Chick-fil-A sauce", "Big Mac sauce", "salt and pepper", "sprinkles"
     ]
   },
   "Music": {
@@ -306,6 +532,38 @@
       "keyboard", "bass guitar", "electric guitar", "recorder", "cowbell", "maracas", "bongo", "kazoo", "French horn", "microphone",
       "piccolo", "oboe", "organ", "synthesizer", "mandolin", "steel drum", "snare drum", "cymbals", "gong", "bells",
       "upright bass", "conga", "castanets", "washboard", "whistle", "keytar", "turntable", "sitar"
+    ],
+    "Broadway & Musicals": [
+      "Hamilton", "Wicked", "Les Misérables", "The Phantom of the Opera", "Cats", "The Lion King", "Mamma Mia!", "Chicago", "Grease", "Rent",
+      "Hairspray", "Annie", "The Sound of Music", "West Side Story", "Fiddler on the Roof", "The Book of Mormon", "Dear Evan Hansen", "Mean Girls", "Frozen", "Aladdin",
+      "Matilda", "Into the Woods", "Sweeney Todd", "Cabaret", "Moulin Rouge!", "Six", "Hadestown", "Jersey Boys", "Little Shop of Horrors", "The Rocky Horror Show",
+      "Oklahoma!", "The Wizard of Oz", "Mary Poppins", "Jesus Christ Superstar", "Joseph and the Amazing Technicolor Dreamcoat", "Hair", "A Chorus Line", "Spamalot", "School of Rock", "Beetlejuice",
+      "Heathers", "Newsies", "Miss Saigon", "Evita", "Broadway", "Tony Awards", "jazz hands", "curtain call", "understudy", "standing ovation",
+      "Lin-Manuel Miranda", "Andrew Lloyd Webber", "Elphaba", "Defying Gravity"
+    ],
+    "Country Music": [
+      "Dolly Parton", "Johnny Cash", "Willie Nelson", "Garth Brooks", "Shania Twain", "Reba McEntire", "Carrie Underwood", "Blake Shelton", "Luke Bryan", "Morgan Wallen",
+      "Luke Combs", "Kenny Chesney", "Tim McGraw", "Faith Hill", "Keith Urban", "Brad Paisley", "Zac Brown Band", "Chris Stapleton", "Kacey Musgraves", "Miranda Lambert",
+      "Toby Keith", "Alan Jackson", "George Strait", "Patsy Cline", "Loretta Lynn", "Hank Williams", "Waylon Jennings", "Jason Aldean", "Lainey Wilson", "Zach Bryan",
+      "Kane Brown", "Rascal Flatts", "The Chicks", "Billy Ray Cyrus", "Cowboy Carter", "Old Town Road", "Jolene", "Friends in Low Places", "Ring of Fire", "Achy Breaky Heart",
+      "Wagon Wheel", "Before He Cheats", "Man! I Feel Like a Woman!", "Nashville", "Grand Ole Opry", "line dancing", "honky tonk", "cowboy boots", "cowboy hat", "banjo",
+      "fiddle", "pickup truck"
+    ],
+    "Famous Songs": [
+      "Bohemian Rhapsody", "Sweet Caroline", "Don't Stop Believin'", "Billie Jean", "Like a Prayer", "Livin' on a Prayer", "Hey Jude", "Imagine", "Yesterday", "Hotel California",
+      "Stairway to Heaven", "Smells Like Teen Spirit", "I Will Always Love You", "My Heart Will Go On", "...Baby One More Time", "Single Ladies", "Crazy in Love", "Rolling in the Deep", "Uptown Funk", "Happy",
+      "Shake It Off", "Anti-Hero", "Bad Guy", "Blinding Lights", "Shape of You", "Despacito", "Mr. Brightside", "Wonderwall", "Africa", "Take On Me",
+      "Don't Stop Me Now", "We Will Rock You", "We Are the Champions", "Sweet Home Alabama", "Free Bird", "Piano Man", "Respect", "Dancing Queen", "Call Me Maybe", "Party in the U.S.A.",
+      "Since U Been Gone", "Toxic", "Hips Don't Lie", "Umbrella", "Poker Face", "Bad Romance", "Firework", "Hey Ya!", "Lose Yourself", "Mambo No. 5",
+      "Never Gonna Give You Up", "Happy Birthday", "All I Want for Christmas Is You", "Espresso"
+    ],
+    "Boy Bands & Girl Groups": [
+      "The Beatles", "The Jackson 5", "NSYNC", "Backstreet Boys", "New Kids on the Block", "Boyz II Men", "98 Degrees", "One Direction", "Jonas Brothers", "Big Time Rush",
+      "BTS", "Stray Kids", "New Edition", "Hanson", "Westlife", "Take That", "5 Seconds of Summer", "Menudo", "The Monkees", "Spice Girls",
+      "Destiny's Child", "TLC", "Fifth Harmony", "Little Mix", "Pussycat Dolls", "The Supremes", "Salt-N-Pepa", "En Vogue", "The Cheetah Girls", "BLACKPINK",
+      "TWICE", "NewJeans", "The Pointer Sisters", "The Go-Go's", "Danity Kane", "KATSEYE", "HUNTR/X", "Saja Boys", "Justin Timberlake", "Harry Styles",
+      "Nick Jonas", "Zayn", "Scary Spice", "Posh Spice", "Baby Spice", "Ginger Spice", "Sporty Spice", "matching outfits", "Bye Bye Bye", "I Want It That Way",
+      "What Makes You Beautiful", "Wannabe"
     ]
   },
   "Comics & Superheroes": {
@@ -334,6 +592,20 @@
       "Waluigi", "Knuckles", "Dr. Eggman", "Scorpion", "Sub-Zero", "Tom Nook", "Eevee", "Charmander", "Squirtle", "Bulbasaur",
       "Enderman", "Freddy Fazbear", "Wii", "Nintendo Switch", "Game Boy", "Nintendo 64", "Nintendo DS", "GameCube", "Mushroom", "Star",
       "Blue Shell", "Mario Party", "Super Nintendo", "Duck Hunt", "banana peel", "Rainbow Road", "Poke Ball", "1-Up"
+    ],
+    "Pokémon": [
+      "Pikachu", "Charmander", "Charizard", "Squirtle", "Blastoise", "Bulbasaur", "Venusaur", "Jigglypuff", "Meowth", "Psyduck",
+      "Snorlax", "Eevee", "Mewtwo", "Mew", "Gengar", "Magikarp", "Gyarados", "Lucario", "Greninja", "Ditto",
+      "Togepi", "Onix", "Geodude", "Machamp", "Mimikyu", "Rayquaza", "Lugia", "Dragonite", "Vulpix", "Growlithe",
+      "Slowpoke", "Cubone", "Lapras", "Articuno", "Zapdos", "Moltres", "Ash Ketchum", "Misty", "Brock", "Team Rocket",
+      "Professor Oak", "Nurse Joy", "Poké Ball", "Pokédex", "gym badge", "Gotta Catch 'Em All", "Pokémon Go", "Pokémon cards", "shiny Pokémon"
+    ],
+    "Mario & Nintendo": [
+      "Mario", "Luigi", "Princess Peach", "Bowser", "Yoshi", "Toad", "Wario", "Waluigi", "Donkey Kong", "Diddy Kong",
+      "Rosalina", "Princess Daisy", "Bowser Jr.", "Koopa Troopa", "Goomba", "Boo", "Shy Guy", "Piranha Plant", "Bullet Bill", "Lakitu",
+      "Chain Chomp", "Kirby", "Link", "Zelda", "Ganon", "Samus", "Fox McCloud", "Isabelle", "Tom Nook", "Inkling",
+      "Captain Falcon", "Mushroom Kingdom", "warp pipe", "Super Mushroom", "Fire Flower", "Super Star", "green shell", "blue shell", "banana peel", "Rainbow Road",
+      "Mario Kart", "Super Smash Bros.", "Animal Crossing", "Nintendo Switch", "Game Boy", "Wii", "Nintendo 64", "Wii Sports"
     ]
   },
   "History": {
@@ -370,6 +642,21 @@
       "Benjamin Franklin", "Albert Einstein", "Steve Jobs", "Bill Gates", "Nikola Tesla", "Leonardo da Vinci", "Isaac Newton", "Galileo", "Marie Curie", "Elon Musk",
       "Mark Zuckerberg", "Velcro", "zipper", "toilet", "bicycle", "train", "steam engine", "vaccine", "X-ray", "GPS",
       "Post-it note", "glasses", "compass", "clock", "calculator", "video game"
+    ],
+    "Famous Women in History": [
+      "Cleopatra", "Joan of Arc", "Queen Elizabeth I", "Queen Victoria", "Marie Antoinette", "Catherine the Great", "Marie Curie", "Amelia Earhart", "Rosa Parks", "Harriet Tubman",
+      "Susan B. Anthony", "Helen Keller", "Florence Nightingale", "Anne Frank", "Eleanor Roosevelt", "Frida Kahlo", "Coco Chanel", "Marilyn Monroe", "Audrey Hepburn", "Princess Diana",
+      "Queen Elizabeth II", "Mother Teresa", "Malala", "Oprah Winfrey", "Ruth Bader Ginsburg", "Sally Ride", "Pocahontas", "Sacagawea", "Betsy Ross", "Clara Barton",
+      "Jane Austen", "Maya Angelou", "Rosie the Riveter", "Michelle Obama", "Margaret Thatcher", "Indira Gandhi", "Serena Williams", "Billie Jean King", "Simone Biles", "Ada Lovelace",
+      "Grace Hopper", "Jane Goodall", "Annie Oakley", "Lucille Ball", "Eva Perón", "Mulan", "Boudica", "Nefertiti", "Katherine Johnson", "Madam C.J. Walker"
+    ],
+    "American History": [
+      "Declaration of Independence", "Constitution", "Bill of Rights", "Boston Tea Party", "Paul Revere", "Revolutionary War", "George Washington", "Benjamin Franklin", "Thomas Jefferson", "Founding Fathers",
+      "Mayflower", "Pilgrims", "Plymouth Rock", "Jamestown", "Salem witch trials", "Lewis and Clark", "Louisiana Purchase", "Manifest Destiny", "Oregon Trail", "Gold Rush",
+      "Wild West", "the Alamo", "Civil War", "Abraham Lincoln", "Gettysburg Address", "Underground Railroad", "Emancipation Proclamation", "Pony Express", "transcontinental railroad", "Ellis Island",
+      "Wright brothers", "Model T", "Prohibition", "Roaring Twenties", "Great Depression", "Dust Bowl", "Pearl Harbor", "D-Day", "atomic bomb", "Cold War",
+      "Space Race", "moon landing", "Martin Luther King Jr.", "I Have a Dream", "civil rights movement", "JFK", "Woodstock", "Vietnam War", "Watergate", "9/11",
+      "Uncle Sam", "Route 66"
     ]
   },
   "Literature & Books": {
@@ -399,6 +686,14 @@
       "House of the Dragon", "Alice in Wonderland", "Shadow and Bone", "The Witcher", "A Series of Unfortunate Events", "Artemis Fowl", "The Spiderwick Chronicles", "Pirates of the Caribbean", "Once Upon a Time", "Merlin",
       "Avatar: The Last Airbender", "Fantastic Beasts", "Frozen", "The Princess Bride", "The Legend of Zelda", "Dungeons & Dragons", "Spirited Away", "King Arthur", "Hocus Pocus", "Beauty and the Beast",
       "Throne of Glass", "Wings of Fire"
+    ],
+    "Fairy Tales & Nursery Rhymes": [
+      "Cinderella", "Snow White", "Sleeping Beauty", "Rapunzel", "Little Red Riding Hood", "Goldilocks and the Three Bears", "The Three Little Pigs", "Hansel and Gretel", "Jack and the Beanstalk", "Rumpelstiltskin",
+      "The Princess and the Pea", "The Little Mermaid", "The Ugly Duckling", "The Frog Prince", "The Gingerbread Man", "Pinocchio", "The Emperor's New Clothes", "The Boy Who Cried Wolf", "The Tortoise and the Hare", "Chicken Little",
+      "The Little Red Hen", "Puss in Boots", "Thumbelina", "The Pied Piper", "Humpty Dumpty", "Jack and Jill", "Little Bo Peep", "Little Miss Muffet", "Mary Had a Little Lamb", "Hickory Dickory Dock",
+      "Twinkle Twinkle Little Star", "Baa Baa Black Sheep", "Itsy Bitsy Spider", "Old MacDonald", "Hey Diddle Diddle", "Three Blind Mice", "Rock-a-bye Baby", "Ring Around the Rosie", "London Bridge Is Falling Down", "Row Row Row Your Boat",
+      "Pat-a-Cake", "Old Mother Hubbard", "Old King Cole", "The Wheels on the Bus", "Big Bad Wolf", "fairy godmother", "glass slipper", "poisoned apple", "magic beans", "happily ever after",
+      "once upon a time"
     ]
   },
   "Animals & Nature": {
@@ -432,6 +727,35 @@
       "Parasaurolophus", "Dilophosaurus", "Megalodon", "Mosasaurus", "Plesiosaurus", "Pteranodon", "raptor", "Jurassic World", "The Land Before Time", "Littlefoot",
       "Barney", "Rex from Toy Story", "Dino from The Flintstones", "Ice Age", "paleontologist", "skeleton", "museum", "amber", "extinction", "herbivore",
       "carnivore", "tar pit", "caveman"
+    ],
+    "Dog Breeds": [
+      "Labrador", "Golden Retriever", "German Shepherd", "Poodle", "Bulldog", "French Bulldog", "Beagle", "Dachshund", "Chihuahua", "Pug",
+      "Corgi", "Husky", "Rottweiler", "Doberman", "Boxer", "Great Dane", "Saint Bernard", "Pit Bull", "Shih Tzu", "Yorkie",
+      "Pomeranian", "Maltese", "Border Collie", "Australian Shepherd", "Dalmatian", "Greyhound", "Bloodhound", "Basset Hound", "Cocker Spaniel", "Bernese Mountain Dog",
+      "Newfoundland", "Shiba Inu", "Akita", "Chow Chow", "Sheepdog", "Goldendoodle", "Labradoodle", "Jack Russell Terrier", "Schnauzer", "Boston Terrier",
+      "Bichon Frise", "Whippet", "Mastiff", "Malamute", "Weimaraner", "Cavalier King Charles", "Chinese Crested", "Afghan Hound", "Bull Terrier", "Samoyed"
+    ],
+    "Birds": [
+      "eagle", "bald eagle", "hawk", "falcon", "owl", "parrot", "penguin", "flamingo", "peacock", "ostrich",
+      "emu", "pelican", "seagull", "pigeon", "crow", "raven", "robin", "blue jay", "cardinal", "hummingbird",
+      "woodpecker", "toucan", "swan", "duck", "goose", "turkey", "rooster", "vulture", "condor", "stork",
+      "heron", "kiwi", "puffin", "canary", "parakeet", "cockatoo", "macaw", "sparrow", "dodo", "roadrunner",
+      "kingfisher", "albatross", "bird nest", "birdhouse", "feather", "Tweety", "Big Bird", "Angry Birds"
+    ],
+    "Bugs & Insects": [
+      "ant", "bee", "wasp", "hornet", "butterfly", "moth", "caterpillar", "ladybug", "beetle", "dung beetle",
+      "grasshopper", "cricket", "cockroach", "mosquito", "fly", "firefly", "dragonfly", "praying mantis", "termite", "flea",
+      "tick", "lice", "bed bug", "spider", "tarantula", "black widow", "scorpion", "centipede", "millipede", "earthworm",
+      "slug", "snail", "stink bug", "walking stick", "cicada", "gnat", "fruit fly", "anthill", "beehive", "honeycomb",
+      "cocoon", "spider web", "bug spray", "fly swatter", "ant farm", "A Bug's Life", "Jiminy Cricket", "The Very Hungry Caterpillar"
+    ],
+    "Plants & Flowers": [
+      "rose", "tulip", "daisy", "sunflower", "lily", "orchid", "daffodil", "lavender", "lilac", "carnation",
+      "dandelion", "poppy", "violet", "marigold", "hibiscus", "lotus", "cherry blossom", "magnolia", "peony", "hydrangea",
+      "pansy", "iris", "cactus", "succulent", "aloe vera", "fern", "moss", "bamboo", "ivy", "Venus flytrap",
+      "bonsai tree", "palm tree", "pine tree", "oak tree", "maple tree", "weeping willow", "redwood", "four-leaf clover", "shamrock", "seaweed",
+      "grass", "thorn", "petal", "bouquet", "flower crown", "greenhouse", "watering can", "sprout", "pumpkin patch", "cornfield",
+      "tumbleweed", "mistletoe"
     ]
   },
   "Mythology": {
@@ -500,6 +824,14 @@
       "Gravity", "The Martian", "Godzilla", "King Kong", "Blade Runner", "The Fifth Element", "Close Encounters", "Signs", "War of the Worlds", "Armageddon",
       "Deep Impact", "Total Recall", "RoboCop", "Ready Player One", "Tron", "Minority Report", "Arrival", "Spaceballs", "Galaxy Quest", "Honey, I Shrunk the Kids",
       "I, Robot", "The Day After Tomorrow", "2001: A Space Odyssey", "Pacific Rim", "Predator", "Jurassic World", "Captain Kirk", "Spock"
+    ],
+    "Lord of the Rings": [
+      "Frodo", "Samwise Gamgee", "Gandalf", "Aragorn", "Legolas", "Gimli", "Boromir", "Merry", "Pippin", "Gollum",
+      "Sméagol", "Bilbo Baggins", "Sauron", "Saruman", "Arwen", "Galadriel", "Elrond", "Éowyn", "Théoden", "Faramir",
+      "Treebeard", "Ents", "Orcs", "Uruk-hai", "Nazgûl", "Balrog", "Smaug", "hobbit", "elves", "dwarves",
+      "the One Ring", "my precious", "Mordor", "Mount Doom", "the Shire", "Rivendell", "Gondor", "Rohan", "Helm's Deep", "Minas Tirith",
+      "Middle-earth", "Fellowship of the Ring", "Eye of Sauron", "second breakfast", "You shall not pass!", "lembas bread", "Sting", "J.R.R. Tolkien", "Peter Jackson", "The Hobbit",
+      "Rings of Power", "Tom Bombadil", "Shadowfax"
     ]
   },
   "Holidays & Traditions": {
@@ -529,6 +861,20 @@
       "Diwali", "Ramadan", "Oktoberfest", "Earth Day", "birthday", "Presidents' Day", "Veterans Day", "Juneteenth", "MLK Day", "Passover",
       "Yom Kippur", "Boxing Day", "Bastille Day", "Canada Day", "Holi", "Christmas Eve", "Good Friday", "Columbus Day", "Leap Day", "Black Friday",
       "Pi Day", "Star Wars Day", "Super Bowl Sunday"
+    ],
+    "Valentine's Day": [
+      "Cupid", "bow and arrow", "heart", "red roses", "box of chocolates", "candy hearts", "teddy bear", "love letter", "Valentine's card", "kiss",
+      "hug", "XOXO", "be mine", "sweetheart", "date night", "candlelight dinner", "crush", "secret admirer", "first date", "blind date",
+      "proposal", "engagement ring", "love song", "slow dance", "heart-shaped box", "Galentine's Day", "Singles Awareness Day", "lovebirds", "soulmate", "boyfriend",
+      "girlfriend", "valentine", "flowers", "balloons", "champagne", "chocolate-covered strawberries", "Hallmark", "perfume", "jewelry", "cheesy pickup line",
+      "puppy love", "love at first sight", "heartbreak", "pink", "friendship bracelet"
+    ],
+    "Birthday Party": [
+      "birthday cake", "candles", "make a wish", "blow out the candles", "Happy Birthday song", "presents", "wrapping paper", "gift bag", "party hat", "balloons",
+      "streamers", "confetti", "piñata", "goody bag", "noisemaker", "cupcakes", "ice cream cake", "pizza party", "bounce house", "face painting",
+      "magician", "clown", "pin the tail on the donkey", "musical chairs", "hide and seek", "sleepover", "surprise party", "birthday card", "birthday boy", "birthday girl",
+      "sweet sixteen", "quinceañera", "over the hill", "21st birthday", "birthday crown", "birthday suit", "Chuck E. Cheese", "Build-A-Bear", "laser tag", "trampoline park",
+      "bowling party", "RSVP", "invitation", "thank-you note", "birthday month", "Leap Day birthday"
     ]
   },
   "Everyday Life": {
@@ -602,6 +948,52 @@
       "polka dots", "stripes", "plaid", "red", "orange", "yellow", "green", "blue", "purple", "pink",
       "black", "white", "brown", "gray", "gold", "silver", "turquoise", "neon green", "maroon", "navy blue",
       "teal", "lavender", "beige", "magenta", "rainbow", "tie-dye", "camouflage"
+    ],
+    "Transportation": [
+      "car", "bus", "school bus", "train", "subway", "airplane", "helicopter", "hot air balloon", "blimp", "rocket",
+      "sailboat", "cruise ship", "submarine", "ferry", "yacht", "jet ski", "canoe", "bicycle", "tricycle", "unicycle",
+      "scooter", "motorcycle", "skateboard", "roller skates", "taxi", "limousine", "ambulance", "fire truck", "police car", "garbage truck",
+      "tow truck", "monster truck", "semi truck", "tractor", "bulldozer", "forklift", "golf cart", "pickup truck", "minivan", "convertible",
+      "race car", "tank", "horse and buggy", "gondola", "ski lift", "cable car", "escalator", "elevator", "Segway", "hoverboard",
+      "monorail", "traffic jam"
+    ],
+    "Emotions & Feelings": [
+      "happy", "sad", "angry", "scared", "surprised", "excited", "nervous", "bored", "confused", "jealous",
+      "embarrassed", "proud", "lonely", "tired", "hangry", "grumpy", "shy", "brave", "silly", "guilty",
+      "disgusted", "frustrated", "relieved", "grateful", "hopeful", "anxious", "calm", "curious", "awkward", "in love",
+      "heartbroken", "homesick", "overwhelmed", "stressed", "annoyed", "giddy", "cranky", "smug", "sassy", "suspicious",
+      "shocked", "terrified", "ecstatic", "nostalgic", "impatient", "determined", "confident", "insecure", "butterflies in your stomach", "road rage",
+      "tantrum", "mood swing"
+    ],
+    "Tools & Hardware": [
+      "hammer", "nail", "screwdriver", "screw", "wrench", "pliers", "drill", "saw", "chainsaw", "tape measure",
+      "level", "sandpaper", "toolbox", "duct tape", "WD-40", "glue gun", "staple gun", "crowbar", "sledgehammer", "shovel",
+      "rake", "wheelbarrow", "ladder", "paintbrush", "paint roller", "extension cord", "power strip", "zip tie", "bungee cord", "padlock",
+      "bolt", "hinge", "Allen wrench", "socket wrench", "vise", "clamp", "chisel", "workbench", "safety goggles", "hard hat",
+      "tool belt", "Home Depot", "Lowe's", "IKEA instructions", "leaf blower", "lawn mower", "pressure washer", "jackhammer", "plunger", "stud finder"
+    ],
+    "At the Office": [
+      "boss", "coworker", "intern", "cubicle", "desk", "office chair", "computer", "keyboard", "mouse", "printer",
+      "copy machine", "paper jam", "fax machine", "stapler", "paper clip", "sticky note", "whiteboard", "conference room", "meeting", "Zoom call",
+      "email", "reply all", "spreadsheet", "PowerPoint", "deadline", "paycheck", "promotion", "raise", "fired", "job interview",
+      "résumé", "business card", "water cooler", "coffee break", "break room", "lunch break", "office party", "Secret Santa", "casual Friday", "Monday morning",
+      "HR", "CEO", "team building", "work from home", "out of office", "clock in", "nine to five", "name tag", "briefcase", "necktie",
+      "Dunder Mifflin"
+    ],
+    "Travel & Airport": [
+      "airport", "passport", "boarding pass", "suitcase", "carry-on", "luggage", "baggage claim", "TSA", "security line", "metal detector",
+      "pat-down", "gate", "terminal", "flight attendant", "pilot", "cockpit", "window seat", "aisle seat", "middle seat", "tray table",
+      "seatbelt sign", "turbulence", "jet lag", "layover", "delayed flight", "cancelled flight", "red-eye", "first class", "economy", "frequent flyer",
+      "duty free", "customs", "visa", "souvenir", "postcard", "hotel", "room service", "Do Not Disturb", "road trip", "GPS",
+      "rental car", "tourist", "selfie stick", "travel pillow", "fanny pack", "itinerary", "vacation", "staycation", "cruise", "all-inclusive",
+      "backpacking", "hostel"
+    ],
+    "At the Fair & Carnival": [
+      "Ferris wheel", "roller coaster", "carousel", "bumper cars", "Tilt-A-Whirl", "funhouse", "house of mirrors", "haunted house", "drop tower", "teacups",
+      "log flume", "cotton candy", "funnel cake", "corn dog", "caramel apple", "kettle corn", "snow cone", "fried Oreos", "turkey leg", "fresh-squeezed lemonade",
+      "ring toss", "balloon darts", "duck pond", "whack-a-mole", "strongman game", "dunk tank", "giant stuffed animal", "goldfish prize", "ride tickets", "prize booth",
+      "carnival barker", "clown", "juggler", "stilt walker", "face painting", "petting zoo", "pig race", "blue ribbon", "butter cow", "livestock show",
+      "4-H", "demolition derby", "tractor pull", "state fair", "county fair", "midway", "fireworks"
     ]
   },
   "Toys & Games": {
@@ -620,6 +1012,69 @@
       "Old Maid", "Spoons", "Crazy Eights", "solitaire", "Exploding Kittens", "Codenames", "Catan", "Mafia", "charades", "Heads Up",
       "Never Have I Ever", "truth or dare", "spin the bottle", "beer pong", "flip cup", "kings cup", "cornhole", "Telephone", "Simon Says", "musical chairs",
       "hide and seek", "tag", "Red Rover", "Marco Polo", "bingo", "Pin the Tail on the Donkey", "Mad Libs", "Boggle", "dominoes"
+    ],
+    "Casino & Card Games": [
+      "poker", "blackjack", "roulette", "slot machine", "craps", "dice", "jackpot", "high roller", "all in", "poker face",
+      "bluff", "royal flush", "full house", "ace of spades", "joker", "deck of cards", "shuffle", "card dealer", "poker chips", "casino",
+      "Monte Carlo", "bingo", "lottery", "scratch-off", "Powerball", "double down", "Texas Hold'em", "Go Fish", "Old Maid", "War",
+      "Crazy Eights", "Spit", "Solitaire", "Rummy", "Euchre", "Hearts", "Spades", "Kings in the Corner", "Speed", "52 Pickup",
+      "card tricks", "house of cards", "pick a card", "Ocean's Eleven", "Casino Royale", "card shark", "rabbit's foot", "lucky seven"
+    ]
+  },
+  "Internet & Pop Culture": {
+    "Memes & Slang": [
+      "rizz", "sus", "no cap", "bussin'", "slay", "GOAT", "OK boomer", "skibidi", "Ohio", "gyatt",
+      "sigma", "delulu", "it's giving", "main character", "NPC", "touch grass", "ratio", "stan", "simp", "yeet",
+      "FOMO", "YOLO", "LOL", "BRB", "TL;DR", "Rickroll", "Doge", "Grumpy Cat", "Nyan Cat", "distracted boyfriend",
+      "This is fine", "Harambe", "Ice Bucket Challenge", "Gangnam Style", "Harlem Shake", "planking", "Tide Pod Challenge", "Bernie mittens", "Kermit sipping tea", "Salt Bae",
+      "Hide the Pain Harold", "Karen", "Florida Man", "Gen Z", "cringe", "vibe check", "mid", "brain rot", "aura", "Hawk Tuah",
+      "Moo Deng", "6-7"
+    ],
+    "Apps & Websites": [
+      "Google", "YouTube", "TikTok", "Instagram", "Snapchat", "Facebook", "X (Twitter)", "Reddit", "Pinterest", "LinkedIn",
+      "WhatsApp", "Discord", "Twitch", "Netflix", "Spotify", "Amazon", "eBay", "Craigslist", "Etsy", "Uber",
+      "Lyft", "DoorDash", "Uber Eats", "Instacart", "Airbnb", "Venmo", "PayPal", "Cash App", "Zoom", "FaceTime",
+      "Wikipedia", "Google Maps", "Waze", "Duolingo", "ChatGPT", "Claude", "Candy Crush", "Wordle", "BeReal", "Threads",
+      "Shazam", "Hulu", "Disney+", "Yelp", "Zillow", "Gmail", "Canva", "Temu", "Shein", "Life360"
+    ],
+    "Famous Couples": [
+      "Romeo and Juliet", "Beyoncé and Jay-Z", "Kim and Kanye", "Brangelina", "Barack and Michelle Obama", "Taylor Swift and Travis Kelce", "Prince William and Kate", "Harry and Meghan", "Johnny Cash and June Carter", "Sonny and Cher",
+      "Bonnie and Clyde", "Lucy and Desi", "Mickey and Minnie", "Kermit and Miss Piggy", "Ross and Rachel", "Jim and Pam", "Shrek and Fiona", "Jack and Rose", "Allie and Noah", "Danny and Sandy",
+      "Belle and the Beast", "Lady and the Tramp", "Homer and Marge", "Fred and Wilma", "Popeye and Olive Oyl", "Antony and Cleopatra", "Napoleon and Josephine", "John Lennon and Yoko Ono", "Justin and Selena", "Justin and Hailey Bieber",
+      "Blake Lively and Ryan Reynolds", "Tom Brady and Gisele", "David and Victoria Beckham", "Bennifer", "Kylie Jenner and Timothée Chalamet", "Chip and Joanna Gaines", "Ozzy and Sharon Osbourne", "Tom Hanks and Rita Wilson", "Edward and Bella", "Katniss and Peeta",
+      "Ron and Hermione", "Han and Leia", "Anakin and Padmé", "Carl and Ellie", "Rapunzel and Flynn", "Mr. and Mrs. Smith", "Adam and Eve", "Barbie and Ken"
+    ]
+  },
+  "Hobbies & Activities": {
+    "Hobbies": [
+      "knitting", "crocheting", "painting", "drawing", "photography", "gardening", "fishing", "hunting", "hiking", "baking",
+      "cooking", "scrapbooking", "pottery", "woodworking", "bird watching", "stamp collecting", "coin collecting", "jigsaw puzzle", "chess", "yoga",
+      "meditation", "journaling", "reading", "skateboarding", "surfing", "rock climbing", "bowling", "golf", "karaoke", "magic tricks",
+      "juggling", "origami", "calligraphy", "sewing", "quilting", "embroidery", "metal detecting", "kite flying", "geocaching", "cosplay",
+      "LEGO building", "model trains", "podcasting", "vlogging", "DJing", "beekeeping", "home brewing", "thrifting", "pickleball", "Dungeons & Dragons",
+      "candle making"
+    ],
+    "Dances & Dance Moves": [
+      "the Macarena", "the Floss", "the Dab", "the Worm", "the Robot", "the Moonwalk", "the Running Man", "the Cha-Cha Slide", "the Electric Slide", "the Cupid Shuffle",
+      "the Chicken Dance", "YMCA", "the Twist", "the Hustle", "the Sprinkler", "the Shopping Cart", "the Lawnmower", "the Griddy", "the Whip", "the Nae Nae",
+      "the Dougie", "Gangnam Style", "Thriller", "the Hokey Pokey", "the Conga", "the Limbo", "the Charleston", "the Tango", "the Salsa", "the Waltz",
+      "breakdancing", "tap dancing", "ballet", "twerking", "line dancing", "square dancing", "belly dancing", "the Can-Can", "Irish jig", "the Haka",
+      "the Carlton", "Crank That (Soulja Boy)", "the Renegade", "the Wobble", "the Bunny Hop", "the Stanky Leg", "the shuffle", "headbanging", "Footloose", "Dirty Dancing"
+    ],
+    "Camping & Outdoors": [
+      "tent", "sleeping bag", "campfire", "s'mores", "marshmallow", "flashlight", "lantern", "headlamp", "bug spray", "bear",
+      "raccoon", "canoe", "kayak", "fishing pole", "hiking boots", "backpack", "compass", "trail", "mountain", "lake",
+      "waterfall", "cabin", "RV", "campground", "national park", "park ranger", "Smokey Bear", "ghost story", "stargazing", "poison ivy",
+      "mosquito bite", "firewood", "axe", "pocketknife", "cooler", "hammock", "camp chair", "trail mix", "granola bar", "binoculars",
+      "outhouse", "Boy Scouts", "Girl Scouts", "summer camp", "bonfire", "lost in the woods", "Bigfoot", "bear spray", "roasting stick"
+    ],
+    "Gym & Fitness": [
+      "treadmill", "dumbbell", "barbell", "kettlebell", "bench press", "squat", "deadlift", "push-up", "pull-up", "sit-up",
+      "crunches", "plank", "burpee", "jumping jacks", "lunges", "yoga mat", "stretching", "personal trainer", "pre-workout", "creatine",
+      "gym bro", "leg day", "six-pack", "biceps", "flexing", "mirror selfie", "sweatband", "spin class", "Zumba", "CrossFit",
+      "Pilates", "Peloton", "elliptical", "stair climber", "rowing machine", "jump rope", "resistance band", "foam roller", "marathon", "5K",
+      "jogging", "sprint", "personal record", "spotter", "rest day", "sore muscles", "Fitbit", "Planet Fitness", "gains", "bodybuilder",
+      "Arnold Schwarzenegger", "Richard Simmons"
     ]
   },
   "After Dark (18+)": {
